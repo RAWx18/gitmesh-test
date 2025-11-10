@@ -1,31 +1,6 @@
-<!-- PROJECT LOGO -->
-<p align="center">
-  <a href="https://github.com/CrowdDotDev/crowd.dev">  </a>
+# Community Data Platform
 
-  <img src="https://github.com/CrowdDotDev/crowd.dev/assets/41432658/e5970c3a-095c-46ea-b93b-eb517bcd8a4f" alt="crowd.dev icon" width="120px">
-
-
-  <h2 align="center">Effortlessly centralize community, product, and customer data</h2>
-  
-  <p align="center">
-    <br>
-    <a href="https://crowd.dev/sign-up">🌐 Cloud version (beta)</a>
-    ·
-    <a href="https://docs.crowd.dev">📖 Docs</a>
-    ·
-    <a href="https://crowd.dev/discord">❤️ Discord</a>
-    ·
-    <a href="https://crowd.dev/newsletter-sign-up">📣 Newsletter</a>
-    ·
-    <a href="https://crowd.dev/roadmap">🗺️ Roadmap</a>
-  </p>
-</p>
-
-<br>
-
-<!-- BODY -->
-
-<img src="https://github.com/CrowdDotDev/crowd.dev/assets/22342669/845fc5b0-aba7-40fe-950e-85ef567cec65" alt="UI Home screen">
+A standalone fork of an earlier version of crowd.dev, modified for independent deployment and maintenance. This platform helps centralize community, product, and customer data with support for various integrations and data analysis capabilities.
 
 
 ## Table of Contents
