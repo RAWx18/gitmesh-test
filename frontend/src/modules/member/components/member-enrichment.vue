@@ -13,7 +13,7 @@
         <a
           aria-label="Learn more"
           class="btn btn--transparent !h-8 !w-8 !text-gray-400 hover:!text-gray-600"
-          href="https://docs.crowd.dev/docs/member-enrichment"
+          href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
           target="_blank"
           rel="noopener noreferrer"
         ><i class="ri-question-line text-lg" /></a>

@@ -57,7 +57,7 @@
       <p id="t-text" class="text-white text-sm font-medium pb-6">
         “Building and engaging community is my top
         priority as a founder of an open-source startup.
-        Crowd.dev is basically the operating system for
+        gitmesh.dev is basically the operating system for
         that.”
       </p>
       <div class="flex items-center">

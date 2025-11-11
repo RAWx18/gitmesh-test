@@ -19,10 +19,10 @@
     <template #content>
       <div class="flex flex-row items-center justify-between w-full">
         <p class="font-bold text-base">
-          Set up crowd.dev in Zapier
+          Set up gitmesh.dev in Zapier
         </p>
         <a
-          href="https://docs.crowd.dev/docs/zapier-integration"
+          href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn--bordered btn--md"
@@ -59,7 +59,7 @@
                 rel="noopener noreferrer"
                 class="underline underline-offset-4"
               >Zapier</a>
-              and connect your crowd.dev account using your workspace API Keys
+              and connect your gitmesh.dev account using your workspace API Keys
             </p>
           </li>
           <li class="flex items-center">
@@ -69,7 +69,7 @@
             <p class="ml-4 text-gray-900 text-xs">
               Learn more about our
               <a
-                href="https://docs.crowd.dev/docs/zapier-integration#supported-triggers"
+                href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="underline underline-offset-4"

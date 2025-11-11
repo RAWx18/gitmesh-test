@@ -23,7 +23,7 @@
             Check our Zapier templates
           </el-button>
         </a>
-        <a href="https://docs.crowd.dev/docs/twitter-integration-via-zapier" target="_blank" rel="noopener noreferrer" class="block">
+        <a href="https://github.com/LF-Decentralized-Trust-labs/gitmesh" target="_blank" rel="noopener noreferrer" class="block">
           <el-button class="btn btn--bordered btn--md w-full text-gray-600">
             <span class="text-lg ri-book-open-line text-gray-600 mr-2" />
             Read our docs

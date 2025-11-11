@@ -8,7 +8,7 @@
             Get personalised onboarding
           </h4>
           <p class="text-sm text-gray-600 leading-5">
-            Learn how to use crowd.dev to accelerate your growth.
+            Learn how to use gitmesh.dev to accelerate your growth.
           </p>
         </div>
       </div>

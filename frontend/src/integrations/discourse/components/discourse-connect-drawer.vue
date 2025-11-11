@@ -55,7 +55,7 @@
           <div
             class="text-2xs text-gray-500 leading-normal mb-1"
           >
-            Create a new API key in your Discourse account's settings page. You must be an admin user to connect your acount. <a href="https://docs.crowd.dev/docs/discourse-integration#api-key" target="_blank" rel="noopener noreferrer">Read more</a>
+            Create a new API key in your Discourse account's settings page. You must be an admin user to connect your acount. <a href="https://github.com/LF-Decentralized-Trust-labs/gitmesh" target="_blank" rel="noopener noreferrer">Read more</a>
           </div>
           <el-input
             ref="focus"
@@ -80,7 +80,7 @@
         <div
           class="text-2xs text-gray-500 leading-normal mb-1"
         >
-          Create new webhooks in your Discourse account's settings page with the following credentials. <a href="https://docs.crowd.dev/docs/discourse-integration#webhooks" target="_blank" rel="noopener noreferrer">Read more</a>
+          Create new webhooks in your Discourse account's settings page with the following credentials. <a href="https://github.com/LF-Decentralized-Trust-labs/gitmesh" target="_blank" rel="noopener noreferrer">Read more</a>
         </div>
       </div>
       <el-form
@@ -163,7 +163,7 @@
         <div
           class="text-2xs text-gray-500 leading-normal mb-1"
         >
-          Confirm if your webhooks are properly configured and crowd.dev is receiving data from Discourse.
+          Confirm if your webhooks are properly configured and gitmesh.dev is receiving data from Discourse.
         </div>
       </el-card>
     </template>

@@ -23,10 +23,10 @@
           "
         >
           <template #body>
-            Please invite your GitHub admin to Crowd.dev and
+            Please invite your GitHub admin to gitmesh.dev and
             ask them to set up the integration.
             <a
-              href="https://docs.crowd.dev/docs/github-integration#set-up-with-missing-permissions"
+              href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
               class="font-semibold absolute right-0 inset-y-0 flex items-center pr-4"
               rel="noopener noreferrer"
               target="_blank"
@@ -43,7 +43,7 @@
             Add Discord Bot to the private channels you need
             it to have access to.
             <a
-              href="https://docs.crowd.dev/docs/discord-integration#how-to-install"
+              href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
               class="font-semibold absolute right-0 inset-y-0 flex items-center pr-4"
               rel="noopener noreferrer"
               target="_blank"
@@ -71,7 +71,7 @@
           <template #body>
             Please check the
             <a
-              href="https://docs.crowd.dev/integrations"
+              href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
               class="font-semibold"
               target="_blank"
               rel="noopener noreferrer"
@@ -130,7 +130,7 @@ export default {
             titleClass: 'text-lg',
             message: `
             <img src="/images/integrations/slack-bot.png" class="mb-6" alt="slack bot installation" />
-            To fetch data from Slack, you need to install the crowd.dev Slack bot and add it to all channels you want to track. <br><br>
+            To fetch data from Slack, you need to install the gitmesh.dev Slack bot and add it to all channels you want to track. <br><br>
             You can either add the Slack bot directly from a channel, or add the app via channel Integrations.`,
             confirmButtonText: 'How to connect Slack bot',
             showCancelButton: false,
@@ -139,7 +139,7 @@ export default {
             closeOnClickModal: false,
             hideCloseButton: true,
           }).then(() => {
-            window.open('https://docs.crowd.dev/docs/slack-integration#how-to-install', '_blank');
+            window.open('https://github.com/LF-Decentralized-Trust-labs/gitmesh', '_blank');
             this.$router.replace({ query: null });
           });
         }

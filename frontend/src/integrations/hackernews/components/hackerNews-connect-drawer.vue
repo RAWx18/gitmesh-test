@@ -21,7 +21,7 @@
           Hacker News. <br />Historical data is available
           after the 1st of December 2022.
           <a
-            href="https://docs.crowd.dev/docs/hacker-news-integration"
+            href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
             target="__blank"
           >
             Read more</a>.

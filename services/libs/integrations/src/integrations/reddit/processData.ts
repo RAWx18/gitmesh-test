@@ -13,11 +13,11 @@ interface IParsePostInput {
 }
 
 /**
- * Parse a post from the reddit API into a crowd.dev activity
+ * Parse a post from the reddit API into a gitmesh.dev activity
  * @param tenantId the tenant ID
  * @param channel the channel (subreddit) we are parsing
  * @param post the post from the Reddit API
- * @returns a post parsed as a crowd.dev activity
+ * @returns a post parsed as a gitmesh.dev activity
  */
 async function parsePost({ channel, post, ctx }: IParsePostInput) {
   const body = post.selftext_html
@@ -60,12 +60,12 @@ interface IParseCommentInput {
 }
 
 /**
- * Parse a comment from the reddit API into a crowd.dev activity
+ * Parse a comment from the reddit API into a gitmesh.dev activity
  * @param tenantId the tenant ID
  * @param channel the channel (subreddit) we are parsing
  * @param comment the comment from the Reddit API
  * @param sourceParentId the ID in Reddit of the parent comment or post
- * @returns a comment parsed as a crowd.dev activity
+ * @returns a comment parsed as a gitmesh.dev activity
  */
 async function parseComment({
   channel,
@@ -109,7 +109,7 @@ async function parseComment({
 /**
  * Parse the relevant fields of a post or a comment into a community member
  * @param activity either a post or a comment
- * @returns a crowd.dev community member
+ * @returns a gitmesh.dev community member
  */
 function parseMember(activity: RedditPost | RedditComment): IMemberData {
   if (activity.author === '[deleted]') {

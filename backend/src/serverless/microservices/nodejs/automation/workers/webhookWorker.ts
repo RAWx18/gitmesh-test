@@ -46,7 +46,7 @@ export default async (
     const result = await request
       .post(settings.url)
       .send(eventPayload)
-      .set('User-Agent', 'Crowd.dev Automations Executor')
+      .set('User-Agent', 'gitmesh.dev Automations Executor')
       .set('X-CrowdDotDev-Event-Type', automation.trigger)
       .set('X-CrowdDotDev-Event-ID', eventId)
 

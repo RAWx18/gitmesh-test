@@ -38,7 +38,7 @@ describe('New Activity Automation Worker tests', () => {
       id: '1234',
       type: 'comment',
       platform: PlatformType.DEVTO,
-      body: 'Crowd.dev is awesome!',
+      body: 'gitmesh.dev is awesome!',
       member: {
         attributes: {},
       },
@@ -71,7 +71,7 @@ describe('New Activity Automation Worker tests', () => {
         },
       },
 
-      body: 'Crowd.dev all awesome!',
+      body: 'gitmesh.dev all awesome!',
     }
 
     expect(await shouldProcessActivity(activity, automation)).toBeTruthy()
@@ -89,7 +89,7 @@ describe('New Activity Automation Worker tests', () => {
       id: '1234',
       type: 'comment',
       platform: PlatformType.DISCORD,
-      body: 'Crowd.dev is awesome!',
+      body: 'gitmesh.dev is awesome!',
     }
 
     expect(await shouldProcessActivity(activity, automation)).toBeFalsy()
@@ -107,7 +107,7 @@ describe('New Activity Automation Worker tests', () => {
       id: '1234',
       type: 'follow',
       platform: PlatformType.DEVTO,
-      body: 'Crowd.dev is awesome!',
+      body: 'gitmesh.dev is awesome!',
     }
 
     expect(await shouldProcessActivity(activity, automation)).toBeFalsy()
@@ -154,7 +154,7 @@ describe('New Activity Automation Worker tests', () => {
           },
         },
       },
-      body: 'Crowd.dev all awesome!',
+      body: 'gitmesh.dev all awesome!',
     }
 
     expect(await shouldProcessActivity(activity, automation)).toBeFalsy()
@@ -183,7 +183,7 @@ describe('New Activity Automation Worker tests', () => {
           },
         },
       },
-      body: 'Crowd.dev all awesome!',
+      body: 'gitmesh.dev all awesome!',
     }
 
     expect(await shouldProcessActivity(activity, automation)).toBeFalsy()

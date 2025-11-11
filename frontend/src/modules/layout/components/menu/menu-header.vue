@@ -8,7 +8,7 @@
           key="logo"
           class="w-40 !opacity-100"
           src="/images/logo/gitmesh.png"
-          alt="crowd.dev logo"
+          alt="gitmesh.dev logo"
         />
       </div>
     </router-link>

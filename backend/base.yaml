@@ -1,9 +1,9 @@
 openapi: 3.0.3
 info:
-  title: crowd.dev API
+  title: gitmesh.dev API
   version: 1.0.5
   description: >
-    crowd.dev API
+    gitmesh.dev API
   contact:
     email: joan@crowd.dev
   license:

@@ -10,7 +10,7 @@
       Merging suggestions
     </h4>
     <div class="text-xs text-gray-600 pb-6">
-      crowd.dev is constantly checking your community for duplicate contacts.
+      gitmesh.dev is constantly checking your community for duplicate contacts.
       Here you can check all the merging suggestions.
     </div>
 

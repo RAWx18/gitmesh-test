@@ -1389,10 +1389,10 @@ describe('ActivityService tests', () => {
       const segmentRepo = new SegmentRepository(mockIRepositoryOptions)
 
       const segment1 = await segmentRepo.create({
-        name: 'Crowd.dev - Segment1',
+        name: 'gitmesh.dev - Segment1',
         url: '',
-        parentName: 'Crowd.dev - Segment1',
-        grandparentName: 'Crowd.dev - Segment1',
+        parentName: 'gitmesh.dev - Segment1',
+        grandparentName: 'gitmesh.dev - Segment1',
         slug: 'crowd.dev-1',
         parentSlug: 'crowd.dev-1',
         grandparentSlug: 'crowd.dev-1',
@@ -1402,10 +1402,10 @@ describe('ActivityService tests', () => {
       })
 
       const segment2 = await segmentRepo.create({
-        name: 'Crowd.dev - Segment2',
+        name: 'gitmesh.dev - Segment2',
         url: '',
-        parentName: 'Crowd.dev - Segment2',
-        grandparentName: 'Crowd.dev - Segment2',
+        parentName: 'gitmesh.dev - Segment2',
+        grandparentName: 'gitmesh.dev - Segment2',
         slug: 'crowd.dev-2',
         parentSlug: 'crowd.dev-2',
         grandparentSlug: 'crowd.dev-2',

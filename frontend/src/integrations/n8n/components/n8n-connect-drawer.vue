@@ -15,10 +15,10 @@
     <template #content>
       <div class="flex flex-row items-center justify-between w-full">
         <p class="font-bold text-base">
-          Set up crowd.dev in n8n
+          Set up gitmesh.dev in n8n
         </p>
         <a
-          href="https://docs.crowd.dev/docs/n8n-integration"
+          href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn--bordered btn--md"
@@ -55,7 +55,7 @@
                 rel="noopener noreferrer"
                 class="underline underline-offset-4"
               >n8n</a>
-              and connect your crowd.dev account using your workspace API Keys
+              and connect your gitmesh.dev account using your workspace API Keys
             </p>
           </li>
           <li class="flex items-center">

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3 class="text-2xl leading-12 font-semibold mb-1">
-      👋 Welcome back
+      🎀 Welcome back
     </h3>
     <p class="text-gray-500 text-xs leading-5">
       Please enter your credentials
