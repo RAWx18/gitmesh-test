@@ -29,7 +29,7 @@ const connect = () => {
       'Are you the admin of your GitHub organization?',
     titleClass: 'text-lg pt-2',
     message:
-      `Only GitHub users with admin permissions are able to connect crowd.dev's GitHub integration.
+      `Only GitHub users with admin permissions are able to connect gitmesh.dev's GitHub integration.
       If you are an organization contact, you will need an approval from the GitHub workspace admin. <a href="https://github.com/LF-Decentralized-Trust-labs/gitmesh" target="_blank">Read more</a>`,
     icon: 'ri-information-line',
     confirmButtonText: 'I\'m the GitHub organization admin',

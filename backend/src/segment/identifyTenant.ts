@@ -7,7 +7,7 @@ export default async function identifyTenant(req) {
     const analytics = new Analytics(SEGMENT_CONFIG.writeKey)
 
     if (API_CONFIG.edition === Edition.HOSTED || API_CONFIG.edition === Edition.LFX) {
-      if (!req.currentUser.email.includes('help@crowd.dev')) {
+      if (!req.currentUser.email.includes('help@gitmesh.dev')) {
         analytics.group({
           userId: req.currentUser.id,
           groupId: req.currentTenant.id,
@@ -17,7 +17,7 @@ export default async function identifyTenant(req) {
         })
       }
     } else if (API_CONFIG.edition === Edition.COMMUNITY) {
-      if (!req.currentUser.email.includes('crowd.dev')) {
+      if (!req.currentUser.email.includes('gitmesh.dev')) {
         analytics.group({
           userId: req.currentUser.id,
           groupId: req.currentTenant.id,

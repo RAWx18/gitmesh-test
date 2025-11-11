@@ -5,7 +5,7 @@
     "givenName": "Joan",
     "familyName": "Reyero"
   },
-  "email": "joan@crowd.dev",
+  "email": "support@gitmesh.dev",
   "location": "Edinburgh, Scotland, GB",
   "timeZone": "Europe/London",
   "utcOffset": 1,
@@ -22,8 +22,8 @@
   "site": null,
   "avatar": null,
   "employment": {
-    "domain": "crowd.dev",
-    "name": "Crowd.dev",
+    "domain": "gitmesh.dev",
+    "name": "gitmesh.dev",
     "title": "Co-founder, CTO",
     "role": "leadership",
     "subRole": "founder",
@@ -36,21 +36,21 @@
     "handle": "joanreyero",
     "id": "12345",
     "avatar": "https://github.com/avatar",
-    "company": "crowd.dev",
-    "blog": "https://crowd.dev",
+    "company": "gitmesh.dev",
+    "blog": "https://gitmesh.dev",
     "followers": 42,
     "following": 42
   },
   "twitter": {
     "handle": "joanreyero",
     "id": "67890",
-    "bio": "Co-founder and CTO @crowd.dev",
+    "bio": "Co-founder and CTO @gitmesh.dev",
     "followers": 4242,
     "following": 4242,
     "statuses": 0,
     "favorites": 0,
     "location": "Berlin",
-    "site": "https://crowd.dev",
+    "site": "https://gitmesh.dev",
     "avatar": "https://twitter.com/avatar"
   },
   "linkedin": {

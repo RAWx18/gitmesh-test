@@ -5,7 +5,7 @@
       <div class="text-2xs text-gray-500 mt-1">
         Read our
         <a
-          href="https://app.swaggerhub.com/apis-docs/Crowd.dev/Crowd.dev"
+          href="https://app.swaggerhub.com/apis-docs/gitmesh.dev/gitmesh.dev"
           target="_blank"
           rel="noopener noreferrer"
           class="font-semibold"

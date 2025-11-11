@@ -132,7 +132,7 @@
             </a>
             <span class="mx-1"> · </span>
             <a
-              href="https://www.crowd.dev/imprint"
+              href="https://www.gitmesh.dev/imprint"
               class="text-gray-400 hover:text-brand-500 mr-8"
               target="_blank"
               rel="noopener noreferrer"
@@ -153,11 +153,11 @@
         <div class="text-gray-300 text-2xs">
           Powered by
         </div>
-        <a href="https://www.crowd.dev/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.gitmesh.dev/" target="_blank" rel="noopener noreferrer">
           <img
-            src="/images/logo/crowd-white.svg"
+            src="/images/logo/gitmesh.png"
             class="block h-3.5 mb-1"
-            alt="logo crowd.dev"
+            alt="logo gitmesh.dev"
           />
         </a>
       </div>

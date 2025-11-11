@@ -7,7 +7,7 @@
       </div>
     </div>
     <h6 class="text-center text-sm font-semibold pb-4">
-      Unlock the full power of crowd.dev
+      Unlock the full power of gitmesh.dev
     </h6>
     <div>
       <article class="flex pb-2">

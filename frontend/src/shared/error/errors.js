@@ -81,7 +81,7 @@ export default class Errors {
 
     if (selectErrorCode(error) === 542) {
       Message.error(
-        'An error has occurred setting up the integration, please reach out to us via chat, or via email (help@crowd.dev)',
+        'An error has occurred setting up the integration, please reach out to us via chat, or via email (help@gitmesh.dev)',
         { duration: 0 },
       );
       return;

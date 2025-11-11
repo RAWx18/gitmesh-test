@@ -36,7 +36,7 @@ export interface Options {
 }
 
 /*
-ServiceWorker holds all details and methods to run a worker services at crowd.dev.
+ServiceWorker holds all details and methods to run a worker services at gitmesh.dev.
 */
 export class ServiceWorker extends Service {
   readonly options: Options

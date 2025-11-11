@@ -30,7 +30,7 @@ describe('New Activity Automation Worker tests', () => {
     const automation = createAutomationData({
       platforms: [PlatformType.DEVTO],
       types: ['comment'],
-      keywords: ['Crowd.dev'],
+      keywords: ['gitmesh.dev'],
       teamMemberActivities: false,
     })
 
@@ -51,7 +51,7 @@ describe('New Activity Automation Worker tests', () => {
     const automation = createAutomationData({
       platforms: [PlatformType.DEVTO],
       types: ['comment'],
-      keywords: ['Crowd.dev'],
+      keywords: ['gitmesh.dev'],
       teamMemberActivities: true,
     })
 
@@ -81,7 +81,7 @@ describe('New Activity Automation Worker tests', () => {
     const automation = createAutomationData({
       platforms: [PlatformType.DEVTO],
       types: ['comment'],
-      keywords: ['Crowd.dev'],
+      keywords: ['gitmesh.dev'],
       teamMemberActivities: false,
     })
 
@@ -99,7 +99,7 @@ describe('New Activity Automation Worker tests', () => {
     const automation = createAutomationData({
       platforms: [PlatformType.DEVTO],
       types: ['comment'],
-      keywords: ['Crowd.dev'],
+      keywords: ['gitmesh.dev'],
       teamMemberActivities: false,
     })
 
@@ -117,7 +117,7 @@ describe('New Activity Automation Worker tests', () => {
     const automation = createAutomationData({
       platforms: [PlatformType.DEVTO],
       types: ['comment'],
-      keywords: ['Crowd.dev'],
+      keywords: ['gitmesh.dev'],
       teamMemberActivities: false,
     })
 
@@ -135,7 +135,7 @@ describe('New Activity Automation Worker tests', () => {
     const automation = createAutomationData({
       platforms: [PlatformType.DEVTO],
       types: ['comment'],
-      keywords: ['Crowd.dev'],
+      keywords: ['gitmesh.dev'],
       teamMemberActivities: false,
     })
 
@@ -164,7 +164,7 @@ describe('New Activity Automation Worker tests', () => {
     const automation = createAutomationData({
       platforms: [PlatformType.DEVTO],
       types: ['comment'],
-      keywords: ['Crowd.dev'],
+      keywords: ['gitmesh.dev'],
       teamMemberActivities: false,
     })
 

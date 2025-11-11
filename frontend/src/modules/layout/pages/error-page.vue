@@ -49,7 +49,7 @@
         <span class="leading-4"> Discord community</span>
       </a>
       <a
-        href="mailto:help@crowd.dev"
+        href="mailto:help@gitmesh.dev"
         class="btn btn--transparent btn--md flex items-center"
         target="_blank"
         rel="noopener noreferrer"

@@ -121,7 +121,7 @@ const dismissGuides = () => {
     title:
       'Do you really want to dismiss our Quickstart Guide?',
     message:
-      'Users that follow our Quickstart Guide are 73% more likely to successfully set-up crowd.dev.',
+      'Users that follow our Quickstart Guide are 73% more likely to successfully set-up gitmesh.dev.',
     icon: 'ri-information-line',
     confirmButtonText: 'Dismiss quickstart guide',
     cancelButtonText: 'Cancel',

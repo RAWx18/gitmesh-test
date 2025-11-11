@@ -1393,9 +1393,9 @@ describe('ActivityService tests', () => {
         url: '',
         parentName: 'gitmesh.dev - Segment1',
         grandparentName: 'gitmesh.dev - Segment1',
-        slug: 'crowd.dev-1',
-        parentSlug: 'crowd.dev-1',
-        grandparentSlug: 'crowd.dev-1',
+        slug: 'gitmesh.dev-1',
+        parentSlug: 'gitmesh.dev-1',
+        grandparentSlug: 'gitmesh.dev-1',
         status: SegmentStatus.ACTIVE,
         sourceId: null,
         sourceParentId: null,
@@ -1406,9 +1406,9 @@ describe('ActivityService tests', () => {
         url: '',
         parentName: 'gitmesh.dev - Segment2',
         grandparentName: 'gitmesh.dev - Segment2',
-        slug: 'crowd.dev-2',
-        parentSlug: 'crowd.dev-2',
-        grandparentSlug: 'crowd.dev-2',
+        slug: 'gitmesh.dev-2',
+        parentSlug: 'gitmesh.dev-2',
+        grandparentSlug: 'gitmesh.dev-2',
         status: SegmentStatus.ACTIVE,
         sourceId: null,
         sourceParentId: null,
@@ -1424,7 +1424,7 @@ describe('ActivityService tests', () => {
 
       const org2 = await OrganizationRepository.create(
         {
-          displayName: 'crowd.dev',
+          displayName: 'gitmesh.dev',
         },
         mockIRepositoryOptions,
       )
@@ -2772,7 +2772,7 @@ describe('ActivityService tests', () => {
         identities: [
           {
             name,
-            platform: 'crowd',
+            platform: 'gitmesh',
           },
         ],
         ...data,

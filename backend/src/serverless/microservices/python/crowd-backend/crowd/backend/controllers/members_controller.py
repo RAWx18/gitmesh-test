@@ -11,7 +11,7 @@ logger = get_logger(__name__)
 
 class MembersController(BaseController):
     """
-    Controller for members in Crowd.dev.
+    Controller for members in gitmesh.dev.
     It can add or update members, detect members to merge and do the merge, and mark members as not merging.
 
     Args:

@@ -5,14 +5,10 @@ info:
   description: >
     gitmesh.dev API
   contact:
-    email: joan@crowd.dev
+    email: support@gitmesh.dev
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-  x-github: https://github.com/crowdHQ
-
-servers:
-  - url: https://app.crowd.dev/api
 
 tags:
   - name: Members

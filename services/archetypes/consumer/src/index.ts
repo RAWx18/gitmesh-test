@@ -22,7 +22,7 @@ export interface Options {
 
 /*
 ServiceConsumer holds all details and methods to run a consumer services at
-crowd.dev.
+gitmesh.dev.
 */
 export class ServiceConsumer extends Service {
   readonly options: Options

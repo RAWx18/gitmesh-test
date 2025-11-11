@@ -1,14 +1,3 @@
-# gitmesh.dev Monorepository
-
-This is the monorepository for most software related to crowd.dev.
-
-Currently, all python software is contained in the crowd namespace, and the modules are in subfolders named accordingly.
-E.g. the internally used github api resides in [crowd-github-api](crowd-github-api) and provides its functionality in a
-`github_api` folder under the `crowd`
-
-The `requirements.txt` contains dev requirements for formatting, linting, testing and `pre-commit`-hooks.
-The modules specify their own requirements in their `setup.py's` `install_requires`.
-
 ## Setup
 
 In order to start developing, the environment needs to be prepared and some hooks need to be configured.

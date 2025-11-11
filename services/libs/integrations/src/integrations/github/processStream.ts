@@ -209,7 +209,7 @@ export const prepareMember = async (
 
   if (memberFromApi?.company) {
     if (IS_TEST_ENV) {
-      orgs = [{ name: 'crowd.dev' }]
+      orgs = [{ name: 'gitmesh.dev' }]
     } else {
       const company = memberFromApi.company.replace('@', '').trim()
       const fromAPI = await getOrganizationData(ctx, company)

@@ -181,7 +181,7 @@ export const newActivityBlocks = (activity) => {
             type: 'button',
             text: {
               type: 'plain_text',
-              text: 'View in crowd.dev',
+              text: 'View in gitmesh.dev',
               emoji: true,
             },
             url: `${API_CONFIG.frontendUrl}/contacts/${member.id}`,

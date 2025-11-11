@@ -5,7 +5,7 @@ require('dotenv').config({
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://apptest-kube.crowd.dev',
+    baseUrl: 'https://apptest-kube.gitmesh.dev',
     specPattern: 'tests/e2e/*.spec.js',
     supportFile: 'tests/support/index.js',
   },
@@ -24,8 +24,8 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
   },
   env: {
-    appUrl: 'https://apptest-kube.crowd.dev',
-    apiUrl: 'https://apptest-kube.crowd.dev/api',
+    appUrl: 'https://apptest-kube.gitmesh.dev',
+    apiUrl: 'https://apptest-kube.gitmesh.dev/api',
     MAILOSAUR_API_KEY: import.meta.env.MAILOSAUR_API_KEY,
     MAILOSAUR_SERVER_ID: import.meta.env.MAILOSAUR_SERVER_ID,
   },

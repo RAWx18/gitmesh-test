@@ -15,7 +15,7 @@
         </div>
         <div class="mt-10">
           <a
-            href="https://www.crowd.dev/contact"
+            href="https://www.gitmesh.dev/contact"
             target="_blank"
             rel="noopener noreferrer"
           >

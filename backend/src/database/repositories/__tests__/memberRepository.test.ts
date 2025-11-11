@@ -283,7 +283,7 @@ describe('MemberRepository tests', () => {
       // sequelize unique constraint
       const member2add = {
         joinedAt: '2020-05-27T15:13:30Z',
-        emails: ['test@crowd.dev'],
+        emails: ['test@gitmesh.dev'],
       }
 
       await expect(() =>
@@ -303,7 +303,7 @@ describe('MemberRepository tests', () => {
             integrationId: generateUUIDv1(),
           },
         },
-        emails: ['test@crowd.dev'],
+        emails: ['test@gitmesh.dev'],
       }
 
       await expect(() =>
@@ -390,9 +390,9 @@ describe('MemberRepository tests', () => {
         url: '',
         parentName: 'gitmesh.dev - Segment1',
         grandparentName: 'gitmesh.dev - Segment1',
-        slug: 'crowd.dev-1',
-        parentSlug: 'crowd.dev-1',
-        grandparentSlug: 'crowd.dev-1',
+        slug: 'gitmesh.dev-1',
+        parentSlug: 'gitmesh.dev-1',
+        grandparentSlug: 'gitmesh.dev-1',
         status: SegmentStatus.ACTIVE,
         sourceId: null,
         sourceParentId: null,
@@ -403,9 +403,9 @@ describe('MemberRepository tests', () => {
         url: '',
         parentName: 'gitmesh.dev - Segment2',
         grandparentName: 'gitmesh.dev - Segment2',
-        slug: 'crowd.dev-2',
-        parentSlug: 'crowd.dev-2',
-        grandparentSlug: 'crowd.dev-2',
+        slug: 'gitmesh.dev-2',
+        parentSlug: 'gitmesh.dev-2',
+        grandparentSlug: 'gitmesh.dev-2',
         status: SegmentStatus.ACTIVE,
         sourceId: null,
         sourceParentId: null,
@@ -413,7 +413,7 @@ describe('MemberRepository tests', () => {
 
       const org1 = await OrganizationRepository.create(
         {
-          displayName: 'crowd.dev',
+          displayName: 'gitmesh.dev',
         },
         mockIRepositoryOptions,
       )
@@ -683,7 +683,7 @@ describe('MemberRepository tests', () => {
         },
         displayName: 'Member 1',
         joinedAt: '2020-05-27T15:13:30Z',
-        emails: ['joan@crowd.dev'],
+        emails: ['support@gitmesh.dev'],
       }
       const member1Returned = await MemberRepository.create(member1, mockIRepositoryOptions)
 
@@ -707,7 +707,7 @@ describe('MemberRepository tests', () => {
         },
         displayName: 'Member 1',
         joinedAt: '2020-05-27T15:13:30Z',
-        emails: ['joan@crowd.dev'],
+        emails: ['support@gitmesh.dev'],
       }
       const member1Returned = await MemberRepository.create(member1, mockIRepositoryOptions)
       delete member1Returned.toMerge
@@ -751,7 +751,7 @@ describe('MemberRepository tests', () => {
         },
         displayName: 'Member 1',
         joinedAt: '2020-05-27T15:13:30Z',
-        emails: ['joan@crowd.dev'],
+        emails: ['support@gitmesh.dev'],
       }
       await MemberRepository.create(member1, mockIRepositoryOptions)
 
@@ -772,7 +772,7 @@ describe('MemberRepository tests', () => {
         },
         displayName: 'Member 1',
         joinedAt: '2020-05-27T15:13:30Z',
-        emails: ['joan@crowd.dev'],
+        emails: ['support@gitmesh.dev'],
       }
       await MemberRepository.create(member1, mockIRepositoryOptions)
 
@@ -1350,20 +1350,20 @@ describe('MemberRepository tests', () => {
       expect(member2.tags[1].name).toEqual('vuejs')
     })
 
-    it('is successfully finding and counting all members, and organisations [crowd.dev, pied piper]', async () => {
+    it('is successfully finding and counting all members, and organisations [gitmesh.dev, pied piper]', async () => {
       const mockIRepositoryOptions = await SequelizeTestUtils.getTestIRepositoryOptions(db)
 
       const crowd = await mockIRepositoryOptions.database.organization.create({
-        displayName: 'crowd.dev',
+        displayName: 'gitmesh.dev',
         tenantId: mockIRepositoryOptions.currentTenant.id,
         segmentId: mockIRepositoryOptions.currentSegments[0].id,
       })
       await OrganizationRepository.addIdentity(
         crowd.id,
         {
-          name: 'crowd.dev',
-          url: 'https://crowd.dev',
-          platform: 'crowd',
+          name: 'gitmesh.dev',
+          url: 'https://gitmesh.dev',
+          platform: 'gitmesh',
         },
         mockIRepositoryOptions,
       )
@@ -1379,7 +1379,7 @@ describe('MemberRepository tests', () => {
         {
           name: 'pied piper',
           url: 'https://piedpiper.com',
-          platform: 'crowd',
+          platform: 'gitmesh',
         },
         mockIRepositoryOptions,
       )
@@ -1436,7 +1436,7 @@ describe('MemberRepository tests', () => {
       )
       const member2 = members.rows.find((m) => m.username[PlatformType.SLACK][0] === 'test2')
       expect(members.rows.length).toEqual(1)
-      expect(member2.organizations[0].displayName).toEqual('crowd.dev')
+      expect(member2.organizations[0].displayName).toEqual('gitmesh.dev')
       expect(member2.organizations[1].displayName).toEqual('pied piper')
     })
 
@@ -2428,19 +2428,19 @@ describe('MemberRepository tests', () => {
       expect(member2.tags.map((t) => t.name)).toEqual(expect.arrayContaining(['nodejs', 'vuejs']))
     })
 
-    it('is successfully finding and counting all members, and organisations [crowd.dev, pied piper]', async () => {
+    it('is successfully finding and counting all members, and organisations [gitmesh.dev, pied piper]', async () => {
       const mockIRepositoryOptions = await SequelizeTestUtils.getTestIRepositoryOptions(db)
 
       const crowd = await OrganizationRepository.create(
         {
           identities: [
             {
-              name: 'crowd.dev',
-              url: 'https://crowd.dev',
-              platform: 'crowd',
+              name: 'gitmesh.dev',
+              url: 'https://gitmesh.dev',
+              platform: 'gitmesh',
             },
           ],
-          displayName: 'crowd.dev',
+          displayName: 'gitmesh.dev',
           tenantId: mockIRepositoryOptions.currentTenant.id,
           segmentId: mockIRepositoryOptions.currentSegments[0].id,
         },
@@ -2452,7 +2452,7 @@ describe('MemberRepository tests', () => {
             {
               name: 'pied piper',
               url: 'https://piedpiper.com',
-              platform: 'crowd',
+              platform: 'gitmesh',
             },
           ],
           displayName: 'pied piper',
@@ -2525,7 +2525,7 @@ describe('MemberRepository tests', () => {
       const member2 = members.rows.find((m) => m.username[PlatformType.SLACK].includes('test2'))
       expect(members.rows.length).toEqual(1)
       expect(member2.organizations.map((o) => o.displayName)).toEqual(
-        expect.arrayContaining(['crowd.dev', 'pied piper']),
+        expect.arrayContaining(['gitmesh.dev', 'pied piper']),
       )
     })
 
@@ -3205,8 +3205,8 @@ describe('MemberRepository tests', () => {
 
       const org1 = await OrganizationRepository.create(
         {
-          displayName: 'crowd.dev',
-          identities: [{ name: 'crowd.dev', url: 'https://crowd.dev', platform: 'crowd' }],
+          displayName: 'gitmesh.dev',
+          identities: [{ name: 'gitmesh.dev', url: 'https://gitmesh.dev', platform: 'crowd' }],
         },
         mockIRepositoryOptions,
       )
@@ -3462,9 +3462,9 @@ describe('MemberRepository tests', () => {
         url: '',
         parentName: 'gitmesh.dev - Segment1',
         grandparentName: 'gitmesh.dev - Segment1',
-        slug: 'crowd.dev-1',
-        parentSlug: 'crowd.dev-1',
-        grandparentSlug: 'crowd.dev-1',
+        slug: 'gitmesh.dev-1',
+        parentSlug: 'gitmesh.dev-1',
+        grandparentSlug: 'gitmesh.dev-1',
         status: SegmentStatus.ACTIVE,
         sourceId: null,
         sourceParentId: null,
@@ -3475,9 +3475,9 @@ describe('MemberRepository tests', () => {
         url: '',
         parentName: 'gitmesh.dev - Segment2',
         grandparentName: 'gitmesh.dev - Segment2',
-        slug: 'crowd.dev-2',
-        parentSlug: 'crowd.dev-2',
-        grandparentSlug: 'crowd.dev-2',
+        slug: 'gitmesh.dev-2',
+        parentSlug: 'gitmesh.dev-2',
+        grandparentSlug: 'gitmesh.dev-2',
         status: SegmentStatus.ACTIVE,
         sourceId: null,
         sourceParentId: null,
@@ -3485,7 +3485,7 @@ describe('MemberRepository tests', () => {
 
       const org1 = await OrganizationRepository.create(
         {
-          displayName: 'crowd.dev',
+          displayName: 'gitmesh.dev',
         },
         mockIRepositoryOptions,
       )
@@ -3781,7 +3781,7 @@ describe('MemberRepository tests', () => {
         identities: [
           {
             name,
-            platform: 'crowd',
+            platform: 'gitmesh',
           },
         ],
         ...data,

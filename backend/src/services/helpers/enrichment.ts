@@ -105,7 +105,7 @@ export async function enrichPerson(email: string): Promise<any> {
  */
 export async function organizationUrlFromName(name: string): Promise<string | null> {
   if (IS_TEST_ENV) {
-    return 'https://crowd.dev'
+    return 'https://gitmesh.dev'
   }
   try {
     // There is no SDK function for this. We have to use the API directly.

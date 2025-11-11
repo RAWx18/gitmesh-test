@@ -26,8 +26,8 @@ describe('OrganizationService tests', () => {
       const toAdd = {
         identities: [
           {
-            name: 'crowd.dev',
-            platform: 'crowd',
+            name: 'gitmesh.dev',
+            platform: 'gitmesh',
           },
         ],
       }
@@ -57,8 +57,8 @@ describe('OrganizationService tests', () => {
       const toAdd = {
         identities: [
           {
-            name: 'crowd.dev',
-            platform: 'crowd',
+            name: 'gitmesh.dev',
+            platform: 'gitmesh',
           },
         ],
       }

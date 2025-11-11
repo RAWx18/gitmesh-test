@@ -1,12 +1,12 @@
 {
   "id": "c822bb12-386a-406a-8c0e-b4d79ec37f09",
-  "name": "Crowd.dev",
+  "name": "gitmesh.dev",
   "legalName": null,
-  "domain": "crowd.dev",
+  "domain": "gitmesh.dev",
   "domainAliases": [],
   "site": {
     "phoneNumbers": ["+42 424242"],
-    "emailAddresses": ["hello@crowd.dev", "jonathan@crowd.dev", "careers@crowd.dev"]
+    "emailAddresses": ["hello@gitmesh.dev", "jonathan@gitmesh.dev", "careers@gitmesh.dev"]
   },
   "category": {
     "sector": null,
@@ -17,9 +17,9 @@
     "naicsCode": null
   },
   "tags": [],
-  "description": "Understand, grow, and engage your developer community with zero hassle. With crowd.dev, you can build developer communities that drive your business forward.",
+  "description": "Understand, grow, and engage your developer community with zero hassle. With gitmesh.dev, you can build developer communities that drive your business forward.",
   "foundedYear": 2021,
-  "location": "208 Utah St #210, San Francisco, CA 94103-4881, US",
+  "location": "N/A",
   "timeZone": "America/Los_Angeles",
   "utcOffset": -7,
   "geo": {
@@ -36,7 +36,7 @@
     "lat": 37.76612,
     "lng": -122.40667
   },
-  "logo": "https://logo.clearbit.com/crowd.dev",
+  "logo": "https://logo.clearbit.com/gitmesh.dev",
   "facebook": {
     "handle": null,
     "likes": null

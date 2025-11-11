@@ -67,7 +67,7 @@ components:
       type: object
       properties:
         default:
-          description: Default value for the attribute. This is set automatically according to <a target="_blank" href="https://crowd.dev">crowd.dev</a> rules.
+          description: Default value for the attribute. This is set automatically according to <a target="_blank" href="https://gitmesh.dev">gitmesh.dev</a> rules.
           type: string
         custom:
           description: Custom value for the attribute. This is optionally set by the user. It will always be picked as the default when sent.

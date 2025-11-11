@@ -597,7 +597,7 @@ describe('ActivityRepository tests', () => {
 
       const org1 = await OrganizationRepository.create(
         {
-          displayName: 'crowd.dev',
+          displayName: 'gitmesh.dev',
         },
         mockIRepositoryOptions,
       )
@@ -1336,7 +1336,7 @@ describe('ActivityRepository tests', () => {
 
       const org1 = await OrganizationRepository.create(
         {
-          displayName: 'crowd.dev',
+          displayName: 'gitmesh.dev',
         },
         mockIRepositoryOptions,
       )

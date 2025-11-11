@@ -514,7 +514,7 @@ describe('MemberService tests', () => {
         attributes: {},
         reach: 10,
         bio: 'Computer Science',
-        organizations: ['crowd.dev'],
+        organizations: ['gitmesh.dev'],
         joinedAt: '2020-05-28T15:13:30Z',
         location: 'Istanbul',
       }
@@ -535,7 +535,7 @@ describe('MemberService tests', () => {
 
       expect(o1).toStrictEqual({
         id: organization.id,
-        displayName: 'crowd.dev',
+        displayName: 'gitmesh.dev',
         github: null,
         location: null,
         website: null,
@@ -607,7 +607,7 @@ describe('MemberService tests', () => {
         attributes: {},
         reach: 10,
         bio: 'Computer Science',
-        organizations: [{ name: 'crowd.dev', url: 'https://crowd.dev', description: 'Here' }],
+        organizations: [{ name: 'gitmesh.dev', url: 'https://gitmesh.dev', description: 'Here' }],
         joinedAt: '2020-05-28T15:13:30Z',
         location: 'Istanbul',
       }
@@ -628,7 +628,7 @@ describe('MemberService tests', () => {
 
       expect(o1).toStrictEqual({
         id: organization.id,
-        displayName: 'crowd.dev',
+        displayName: 'gitmesh.dev',
         github: null,
         location: null,
         website: null,
@@ -695,8 +695,8 @@ describe('MemberService tests', () => {
       const oCreated = await new OrganizationService(mockIServiceOptions).createOrUpdate({
         identities: [
           {
-            name: 'crowd.dev',
-            platform: 'crowd',
+            name: 'gitmesh.dev',
+            platform: 'gitmesh',
           },
         ],
       })
@@ -730,7 +730,7 @@ describe('MemberService tests', () => {
 
       expect(o1).toStrictEqual({
         id: organization.id,
-        displayName: 'crowd.dev',
+        displayName: 'gitmesh.dev',
         github: null,
         location: null,
         website: null,
@@ -1711,7 +1711,7 @@ describe('MemberService tests', () => {
           [PlatformType.GITHUB]: 'anil',
         },
         displayName: 'Anil',
-        emails: ['anil+1@crowd.dev', 'anil+2@crowd.dev'],
+        emails: ['anil+1@gitmesh.dev', 'anil+2@gitmesh.dev'],
         joinedAt: '2021-05-27T15:14:30Z',
         attributes: {},
         tags: [t1.id, t2.id],
@@ -1724,13 +1724,13 @@ describe('MemberService tests', () => {
         username: {
           [PlatformType.DISCORD]: 'anil',
         },
-        emails: ['anil+1@crowd.dev', 'anil+3@crowd.dev'],
+        emails: ['anil+1@gitmesh.dev', 'anil+3@gitmesh.dev'],
         displayName: 'Anil',
         joinedAt: '2021-05-30T15:14:30Z',
         attributes: {
           [MemberAttributeName.LOCATION]: {
-            [PlatformType.GITHUB]: 'Crowd.dev',
-            default: 'Crowd.dev',
+            [PlatformType.GITHUB]: 'gitmesh.dev',
+            default: 'gitmesh.dev',
           },
           [MemberAttributeName.SOURCE_ID]: {
             [PlatformType.DISCORD]: '#discordId',
@@ -1930,7 +1930,7 @@ describe('MemberService tests', () => {
         },
         activeOn: [activityCreated.platform],
         activityTypes: [`${activityCreated.platform}:${activityCreated.type}`],
-        emails: ['anil+1@crowd.dev', 'anil+2@crowd.dev', 'anil+3@crowd.dev'],
+        emails: ['anil+1@gitmesh.dev', 'anil+2@gitmesh.dev', 'anil+3@gitmesh.dev'],
         score: -1,
         importHash: null,
         createdAt: returnedMember1.createdAt,

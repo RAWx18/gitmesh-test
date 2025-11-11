@@ -372,10 +372,10 @@ export default class UserRepository {
       })
     }
 
-    // Exclude help@crowd.dev
+    // Exclude help@gitmesh.dev
     whereAnd.push({
       email: {
-        [Op.ne]: 'help@crowd.dev',
+        [Op.ne]: 'help@gitmesh.dev',
       },
     })
 
@@ -479,7 +479,7 @@ export default class UserRepository {
 
     whereAnd.push({
       email: {
-        [Op.ne]: 'help@crowd.dev',
+        [Op.ne]: 'help@gitmesh.dev',
       },
     })
 

@@ -7,7 +7,7 @@ export default function identify(user) {
   if (SEGMENT_CONFIG.writeKey) {
     const analytics = new Analytics(SEGMENT_CONFIG.writeKey)
     if (API_CONFIG.edition === Edition.HOSTED || API_CONFIG.edition === Edition.LFX) {
-      if (user.email !== 'help@crowd.dev') {
+      if (user.email !== 'help@gitmesh.dev') {
         analytics.identify({
           userId: user.id,
           traits: {
@@ -26,7 +26,7 @@ export default function identify(user) {
         })
       }
     } else if (API_CONFIG.edition === Edition.COMMUNITY) {
-      if (!user.email.includes('crowd.dev')) {
+      if (!user.email.includes('gitmesh.dev')) {
         analytics.identify({
           userId: user.id,
           traits: {

@@ -854,8 +854,8 @@ describe('MemberAttributeSettingService tests', () => {
       expect(isCorrectType([], MemberAttributeType.DATE)).toBeFalsy()
 
       // email
-      expect(isCorrectType('anil@crowd.dev', MemberAttributeType.EMAIL)).toBeTruthy()
-      expect(isCorrectType('anil+123@crowd.dev', MemberAttributeType.EMAIL)).toBeTruthy()
+      expect(isCorrectType('anil@gitmesh.dev', MemberAttributeType.EMAIL)).toBeTruthy()
+      expect(isCorrectType('anil+123@gitmesh.dev', MemberAttributeType.EMAIL)).toBeTruthy()
 
       expect(isCorrectType(15, MemberAttributeType.EMAIL)).toBeFalsy()
       expect(isCorrectType('', MemberAttributeType.EMAIL)).toBeFalsy()

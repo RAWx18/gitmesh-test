@@ -22,7 +22,7 @@ export default function track(
     SEGMENT_CONFIG.writeKey &&
     // This is only for events in the self-hosted version. Hosted has more telemetry.
     API_CONFIG.edition === Edition.COMMUNITY &&
-    !email.includes('crowd.dev')
+    !email.includes('gitmesh.dev')
   ) {
     if (
       properties &&

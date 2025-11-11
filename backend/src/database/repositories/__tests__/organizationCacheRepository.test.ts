@@ -5,14 +5,14 @@ import SequelizeTestUtils from '../../utils/sequelizeTestUtils'
 const db = null
 
 const toCreate = {
-  name: 'crowd.dev',
-  url: 'https://crowd.dev',
+  name: 'gitmesh.dev',
+  url: 'https://gitmesh.dev',
   description: 'Community-led Growth for Developer-first Companies.\nJoin our private beta',
-  emails: ['hello@crowd.dev', 'jonathan@crow.dev'],
+  emails: ['hello@gitmesh.dev', 'jonathan@gitmesh.dev'],
   phoneNumbers: ['+42 424242424'],
-  logo: 'https://logo.clearbit.com/crowd.dev',
+  logo: 'https://logo.clearbit.com/gitmesh.dev',
   tags: ['community', 'growth', 'developer-first'],
-  website: 'https://crowd.dev',
+  website: 'https://gitmesh.dev',
   location: 'Berlin',
   github: {
     handle: 'CrowdDotDev',

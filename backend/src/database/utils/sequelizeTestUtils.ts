@@ -202,7 +202,7 @@ export default class SequelizeTestUtils {
 
   static async getRandomUser() {
     return {
-      email: this.getRandomString('test-user-', '@crowd.dev'),
+      email: this.getRandomString('test-user-', '@gitmesh.dev'),
       password: await bcrypt.hash('12345', 12),
       emailVerified: true,
     }

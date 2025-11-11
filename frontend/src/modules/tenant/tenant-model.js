@@ -21,7 +21,7 @@ const fields = {
   }),
   reasonForUsingCrowd: new StringField(
     'reasonForUsingCrowd',
-    'What would you like to achieve with crowd.dev? ',
+    'What would you like to achieve with gitmesh.dev? ',
     {},
   ),
   tenantPlatforms: new StringArrayField(

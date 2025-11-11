@@ -84,7 +84,7 @@
             <span class="ri-information-line text-blue-900 mr-2 text-base h-4 flex items-center" />
             <span class="text-[11px] text-blue-900 leading-4.5">We recommend creating custom properties in Hubspot for every gitmesh.dev attribute.
               <a
-                href="https://go.crowd.dev/hubspot-docs-properties"
+                href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="underline text-blue-900 font-medium"

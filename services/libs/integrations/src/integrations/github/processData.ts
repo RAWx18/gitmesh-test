@@ -77,7 +77,7 @@ const parseMember = (memberData: GithubPrepareMemberOutput): IMemberData => {
     if (IS_TEST_ENV) {
       member.organizations = [
         {
-          identities: [{ name: 'crowd.dev', platform: PlatformType.GITHUB }],
+          identities: [{ name: 'gitmesh.dev', platform: PlatformType.GITHUB }],
           source: OrganizationSource.GITHUB,
         },
       ]

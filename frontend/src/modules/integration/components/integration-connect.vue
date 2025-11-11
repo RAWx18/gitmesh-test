@@ -27,7 +27,7 @@
   </component>
   <a
     v-else-if="props.integration.platform === 'custom'"
-    href="https://crowd.dev/integration-framework"
+    href="https://gitmesh.dev/integration-framework"
     target="_blank"
     rel="noopener noreferrer"
     class="btn btn-brand btn-brand--primary btn--md"

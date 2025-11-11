@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name anton.crowd.dev;
+    server_name anton.gitmesh.dev;
     
     client_max_body_size 200M;
     access_log   /var/log/nginx/anton.access.log;

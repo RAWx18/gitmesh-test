@@ -6,7 +6,7 @@ Cypress.LocalStorage.clear = function () {
   return {};
 };
 
-describe('Crowd.dev', () => {
+describe('gitmesh.dev', () => {
   const serverId = Cypress.env('MAILOSAUR_SERVER_ID');
   const email = `${Date.now()}@${serverId}.mailosaur.net`;
 

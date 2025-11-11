@@ -11,16 +11,16 @@ const db = null
 const toCreate = {
   identities: [
     {
-      name: 'crowd.dev',
-      platform: 'crowd',
-      url: 'https://crowd.dev',
+      name: 'gitmesh.dev',
+      platform: 'gitmesh',
+      url: 'https://gitmesh.dev',
     },
   ],
-  displayName: 'crowd.dev',
+  displayName: 'gitmesh.dev',
   description: 'Community-led Growth for Developer-first Companies.\nJoin our private beta',
-  emails: ['hello@crowd.dev', 'jonathan@crow.dev'],
+  emails: ['hello@gitmesh.dev', 'jonathan@crow.dev'],
   phoneNumbers: ['+42 424242424'],
-  logo: 'https://logo.clearbit.com/crowd.dev',
+  logo: 'https://logo.clearbit.com/gitmesh.dev',
   tags: ['community', 'growth', 'developer-first'],
   twitter: {
     handle: 'CrowdDotDev',
@@ -604,15 +604,15 @@ describe('OrganizationRepository tests', () => {
     const crowddev = {
       identities: [
         {
-          name: 'crowd.dev',
-          platform: 'crowd',
-          url: 'https://crowd.dev',
+          name: 'gitmesh.dev',
+          platform: 'gitmesh',
+          url: 'https://gitmesh.dev',
         },
       ],
       description: 'Community-led Growth for Developer-first Companies.\nJoin our private beta',
-      emails: ['hello@crowd.dev', 'jonathan@crowd.dev'],
+      emails: ['hello@gitmesh.dev', 'jonathan@gitmesh.dev'],
       phoneNumbers: ['+42 424242424'],
-      logo: 'https://logo.clearbit.com/crowd.dev',
+      logo: 'https://logo.clearbit.com/gitmesh.dev',
       tags: ['community', 'growth', 'developer-first'],
       twitter: {
         handle: 'CrowdDotDev',
@@ -641,7 +641,7 @@ describe('OrganizationRepository tests', () => {
       identities: [
         {
           name: 'Pied Piper',
-          platform: 'crowd',
+          platform: 'gitmesh',
           url: 'https://piedpiper.io',
         },
       ],
@@ -677,7 +677,7 @@ describe('OrganizationRepository tests', () => {
       identities: [
         {
           name: 'Hooli',
-          platform: 'crowd',
+          platform: 'gitmesh',
           url: 'https://hooli.com',
         },
       ],
@@ -738,7 +738,7 @@ describe('OrganizationRepository tests', () => {
       const found = await OrganizationRepository.findAndCountAll(
         {
           filter: {
-            url: 'crowd.dev',
+            url: 'gitmesh.dev',
           },
           includeOrganizationsWithoutMembers: true,
         },
@@ -746,7 +746,7 @@ describe('OrganizationRepository tests', () => {
       )
 
       expect(found.count).toEqual(1)
-      expect(found.rows[0].name).toBe('crowd.dev')
+      expect(found.rows[0].name).toBe('gitmesh.dev')
     })
 
     it('Should filter by description', async () => {
@@ -766,7 +766,7 @@ describe('OrganizationRepository tests', () => {
       )
 
       expect(found.count).toEqual(1)
-      expect(found.rows[0].name).toBe('crowd.dev')
+      expect(found.rows[0].name).toBe('gitmesh.dev')
     })
 
     it('Should filter by emails', async () => {
@@ -778,7 +778,7 @@ describe('OrganizationRepository tests', () => {
       const found = await OrganizationRepository.findAndCountAll(
         {
           filter: {
-            emails: 'richard@piedpiper.io,jonathan@crowd.dev',
+            emails: 'richard@piedpiper.io,jonathan@gitmesh.dev',
           },
           includeOrganizationsWithoutMembers: true,
         },
@@ -790,7 +790,7 @@ describe('OrganizationRepository tests', () => {
       const found2 = await OrganizationRepository.findAndCountAll(
         {
           filter: {
-            emails: ['richard@piedpiper.io', 'jonathan@crowd.dev'],
+            emails: ['richard@piedpiper.io', 'jonathan@gitmesh.dev'],
           },
           includeOrganizationsWithoutMembers: true,
         },
@@ -848,7 +848,7 @@ describe('OrganizationRepository tests', () => {
       )
 
       expect(found.count).toEqual(1)
-      expect(found.rows[0].name).toBe('crowd.dev')
+      expect(found.rows[0].name).toBe('gitmesh.dev')
     })
 
     it('Should filter by linkedin handle', async () => {
@@ -868,7 +868,7 @@ describe('OrganizationRepository tests', () => {
       )
 
       expect(found.count).toEqual(1)
-      expect(found.rows[0].name).toBe('crowd.dev')
+      expect(found.rows[0].name).toBe('gitmesh.dev')
     })
 
     it('Should filter by employee range', async () => {
@@ -966,7 +966,7 @@ describe('OrganizationRepository tests', () => {
       )
 
       expect(found.count).toEqual(1)
-      expect(found.rows[0].name).toBe('crowd.dev')
+      expect(found.rows[0].name).toBe('gitmesh.dev')
     })
 
     // we can skip this test - findAndCount is not used anymore - we use opensearch method findAndCountAllOpensearch instead

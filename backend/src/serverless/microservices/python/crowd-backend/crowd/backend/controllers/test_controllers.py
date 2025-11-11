@@ -43,7 +43,7 @@ def test_update_members_to_merge(api: "Repository"):
 def test_update_members(api: "Repository"):
     """Tests updating a members using the members_controller"""
     members_controller = MembersController(api.tenant_id, api)
-    updates = {"id": "160f1462-7df1-4bc0-bc16-8b357608725c", "update": {"organisation": "crowd.dev"}}
+    updates = {"id": "160f1462-7df1-4bc0-bc16-8b357608725c", "update": {"organisation": "gitmesh.dev"}}
     result = members_controller.update([updates], send=False)
     assert result == 1
 

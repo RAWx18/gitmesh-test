@@ -22,7 +22,7 @@ export default async function identify(
     SEGMENT_CONFIG.writeKey &&
     // This is only for events in the hosted version. Self-hosted has less telemetry.
     (API_CONFIG.edition === Edition.HOSTED || API_CONFIG.edition === Edition.LFX) &&
-    userEmail !== 'help@crowd.dev'
+    userEmail !== 'help@gitmesh.dev'
   ) {
     if (
       properties &&

@@ -147,7 +147,7 @@ describe('RawQueryParser', () => {
       and: [
         {
           emails: {
-            in: ['crash@crowd.dev', 'burn@crowd.dev'],
+            in: ['crash@gitmesh.dev', 'burn@gitmesh.dev'],
           },
         },
         {},
@@ -164,8 +164,8 @@ describe('RawQueryParser', () => {
     )
 
     expect(result).toEqual(`((m.emails in (:emails_1, :emails_2)) and (1=1))`)
-    expect(params.emails_1).toEqual('crash@crowd.dev')
-    expect(params.emails_2).toEqual('burn@crowd.dev')
+    expect(params.emails_1).toEqual('crash@gitmesh.dev')
+    expect(params.emails_2).toEqual('burn@gitmesh.dev')
   })
 
   it('Should parse filter with attribute column multiselect filter', () => {

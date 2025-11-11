@@ -56,7 +56,7 @@
             integrations with connectivity issues. If this
             problem persists, contact us via
             <a
-              href="mailto:help@crowd.dev"
+              href="mailto:help@gitmesh.dev"
               class="font-semibold"
             >email</a>
             or engage within our

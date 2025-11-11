@@ -5,7 +5,7 @@ account_id = "48367974b0e8157cefe9d2e07b2b27bd"
 workers_dev = false
 
 name = "apptest"
-route = "apptest.crowd.dev/*"
+route = "apptest.gitmesh.dev/*"
 zone_id = "6e9b35255f9c3780d25470d5be4901c5"
 compatibility_date = "2022-06-22"
 
@@ -16,6 +16,6 @@ bucket = "dist"
 # Example of another workers site.  We'll be doing production in pages
 [env.production]
 name = "app"
-route = "app.crowd.dev/*"
+route = "app.gitmesh.dev/*"
 zone_id = "6e9b35255f9c3780d25470d5be4901c5"
 

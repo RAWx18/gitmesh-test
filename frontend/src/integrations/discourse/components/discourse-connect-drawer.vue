@@ -39,7 +39,7 @@
           <el-input
             ref="focus"
             v-model="form.discourseURL"
-            placeholder="https://community.crowd.dev"
+            placeholder="https://community.gitmesh.dev"
             @blur="onBlurDiscourseURL()"
           />
         </app-form-item>

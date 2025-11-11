@@ -23,7 +23,7 @@
           v-for="(_, ii) of form.remotes"
           :key="ii"
           v-model="form.remotes[ii]"
-          placeholder="https://github.com/CrowdDotDev/crowd.dev.git"
+          placeholder="https://github.com/LF-Decentralized-Trust-labs/gitmesh.git"
         >
           <template #after>
             <el-button

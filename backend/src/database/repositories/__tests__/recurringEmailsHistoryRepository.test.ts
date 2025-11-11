@@ -27,7 +27,7 @@ describe('RecurringEmailsHistory tests', () => {
       const historyData: RecurringEmailsHistoryData = {
         emailSentAt: '2023-01-02T00:00:00Z',
         type: RecurringEmailType.WEEKLY_ANALYTICS,
-        emailSentTo: ['anil@crowd.dev', 'uros@crowd.dev'],
+        emailSentTo: ['anil@gitmesh.dev', 'uros@gitmesh.dev'],
         tenantId: mockIRepositoryOptions.currentTenant.id,
         weekOfYear: '1',
       }
@@ -48,7 +48,7 @@ describe('RecurringEmailsHistory tests', () => {
       await expect(() =>
         rehRepository.create({
           emailSentAt: '2023-01-02T00:00:00Z',
-          emailSentTo: ['anil@crowd.dev', 'uros@crowd.dev'],
+          emailSentTo: ['anil@gitmesh.dev', 'uros@gitmesh.dev'],
           tenantId: mockIRepositoryOptions.currentTenant.id,
           type: undefined,
         }),
@@ -57,7 +57,7 @@ describe('RecurringEmailsHistory tests', () => {
       await expect(() =>
         rehRepository.create({
           emailSentAt: undefined,
-          emailSentTo: ['anil@crowd.dev', 'uros@crowd.dev'],
+          emailSentTo: ['anil@gitmesh.dev', 'uros@gitmesh.dev'],
           tenantId: mockIRepositoryOptions.currentTenant.id,
           weekOfYear: '1',
           type: RecurringEmailType.WEEKLY_ANALYTICS,
@@ -77,7 +77,7 @@ describe('RecurringEmailsHistory tests', () => {
       await expect(() =>
         rehRepository.create({
           emailSentAt: '2023-01-02T00:00:00Z',
-          emailSentTo: ['anil@crowd.dev', 'uros@crowd.dev'],
+          emailSentTo: ['anil@gitmesh.dev', 'uros@gitmesh.dev'],
           tenantId: undefined,
           weekOfYear: '1',
           type: RecurringEmailType.WEEKLY_ANALYTICS,
@@ -92,7 +92,7 @@ describe('RecurringEmailsHistory tests', () => {
 
       const historyData: RecurringEmailsHistoryData = {
         emailSentAt: '2023-01-02T00:00:00Z',
-        emailSentTo: ['anil@crowd.dev', 'uros@crowd.dev'],
+        emailSentTo: ['anil@gitmesh.dev', 'uros@gitmesh.dev'],
         tenantId: mockIRepositoryOptions.currentTenant.id,
         weekOfYear: '1',
         type: RecurringEmailType.WEEKLY_ANALYTICS,
@@ -121,7 +121,7 @@ describe('RecurringEmailsHistory tests', () => {
 
       const historyData: RecurringEmailsHistoryData = {
         emailSentAt: '2023-01-02T00:00:00Z',
-        emailSentTo: ['anil@crowd.dev', 'uros@crowd.dev'],
+        emailSentTo: ['anil@gitmesh.dev', 'uros@gitmesh.dev'],
         tenantId: mockIRepositoryOptions.currentTenant.id,
         weekOfYear: '1',
         type: RecurringEmailType.EAGLE_EYE_DIGEST,

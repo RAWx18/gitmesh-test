@@ -49,7 +49,7 @@ export interface Config {
 }
 
 /*
-Service holds all details and methods to run any kind of services at crowd.dev.
+Service holds all details and methods to run any kind of services at gitmesh.dev.
 */
 export class Service {
   readonly name: string

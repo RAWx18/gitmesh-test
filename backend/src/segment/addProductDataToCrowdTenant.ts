@@ -10,7 +10,7 @@ const ANALYTICS_TENANT_ID = ANALYTICS_CONFIG.tenantId
 const ANALYTICS_BASE_URL = ANALYTICS_CONFIG.baseUrl
 const ANALYTICS_TOKEN = ANALYTICS_CONFIG.apiToken
 
-export const ANALYTICS_PLATORM_NAME = 'crowd.dev-analytics'
+export const ANALYTICS_PLATORM_NAME = 'gitmesh.dev-analytics'
 
 const log = getServiceChildLogger('segment')
 
