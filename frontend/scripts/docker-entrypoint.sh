@@ -36,11 +36,11 @@ declare -a ENV_VARIABLES=(
 
 for ENV_VAR in "${ENV_VARIABLES[@]}"
 do
-  echo "Replacing CROWD_$ENV_VAR with '${!ENV_VAR}' in $JS_DESTINATION and $HTML_DESTINATION!"
+  echo "Replacing $ENV_VAR with '${!ENV_VAR}' in $JS_DESTINATION and $HTML_DESTINATION!"
   _SED_SPECIAL_CHARS_ESCAPED=$(printf '%s\n' "${!ENV_VAR}" | sed -e 's/[\/&]/\\&/g')
 
-  sed -i "s|CROWD_$ENV_VAR|${_SED_SPECIAL_CHARS_ESCAPED}|g" ${JS_DESTINATION}
-  sed -i "s|CROWD_$ENV_VAR|${_SED_SPECIAL_CHARS_ESCAPED}|g" ${HTML_DESTINATION}
+  sed -i "s|$ENV_VAR|${_SED_SPECIAL_CHARS_ESCAPED}|g" ${JS_DESTINATION}
+  sed -i "s|$ENV_VAR|${_SED_SPECIAL_CHARS_ESCAPED}|g" ${HTML_DESTINATION}
 done
 
 echo "Starting Nginx!"

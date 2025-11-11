@@ -10,13 +10,13 @@ export async function sendEmail(toSend: EmailToSend): Promise<EmailSent> {
   const email: MailDataRequired = {
     to: toSend.email,
     from: {
-      name: process.env['CROWD_SENDGRID_NAME_FROM'],
-      email: process.env['CROWD_SENDGRID_EMAIL_FROM'],
+      name: process.env['SENDGRID_NAME_FROM'],
+      email: process.env['SENDGRID_EMAIL_FROM'],
     },
-    templateId: process.env['CROWD_SENDGRID_TEMPLATE_WEEKLY_ANALYTICS'],
+    templateId: process.env['SENDGRID_TEMPLATE_WEEKLY_ANALYTICS'],
     dynamicTemplateData: {
       ...toSend.content,
-      appHost: process.env['CROWD_API_FRONTEND_URL'],
+      appHost: process.env['API_FRONTEND_URL'],
     },
   }
 

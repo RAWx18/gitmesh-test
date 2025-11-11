@@ -6,7 +6,7 @@ export default async function identifyTenant(req) {
     const Analytics = require('analytics-node')
     const analytics = new Analytics(SEGMENT_CONFIG.writeKey)
 
-    if (API_CONFIG.edition === Edition.CROWD_HOSTED || API_CONFIG.edition === Edition.LFX) {
+    if (API_CONFIG.edition === Edition.HOSTED || API_CONFIG.edition === Edition.LFX) {
       if (!req.currentUser.email.includes('help@crowd.dev')) {
         analytics.group({
           userId: req.currentUser.id,

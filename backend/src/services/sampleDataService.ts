@@ -10,7 +10,7 @@ import {
   PlatformType,
 } from '@crowd/types'
 import {
-  CROWD_MEMBER_ATTRIBUTES,
+  MEMBER_ATTRIBUTES,
   DEVTO_MEMBER_ATTRIBUTES,
   DISCORD_MEMBER_ATTRIBUTES,
   GITHUB_MEMBER_ATTRIBUTES,
@@ -60,7 +60,7 @@ export default class SampleDataService extends LoggerBase {
         await memberAttributeSettingsService.createPredefined(
           MemberAttributeSettingsService.pickAttributes(
             [MemberAttributeName.SAMPLE],
-            CROWD_MEMBER_ATTRIBUTES,
+            MEMBER_ATTRIBUTES,
           ),
         )
         await memberAttributeSettingsService.createPredefined(GITHUB_MEMBER_ATTRIBUTES)

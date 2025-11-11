@@ -20,27 +20,27 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_UNLEASH_DB_HOST
+                  key: UNLEASH_DB_HOST
             - name: DATABASE_PORT
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_UNLEASH_DB_PORT
+                  key: UNLEASH_DB_PORT
             - name: DATABASE_NAME
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_UNLEASH_DB_NAME
+                  key: UNLEASH_DB_NAME
             - name: DATABASE_USERNAME
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_UNLEASH_DB_USERNAME
+                  key: UNLEASH_DB_USERNAME
             - name: DATABASE_PASSWORD
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_UNLEASH_DB_PASSWORD
+                  key: UNLEASH_DB_PASSWORD
 
           ports:
             - containerPort: 4242

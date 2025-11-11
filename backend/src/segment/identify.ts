@@ -6,7 +6,7 @@ export default function identify(user) {
 
   if (SEGMENT_CONFIG.writeKey) {
     const analytics = new Analytics(SEGMENT_CONFIG.writeKey)
-    if (API_CONFIG.edition === Edition.CROWD_HOSTED || API_CONFIG.edition === Edition.LFX) {
+    if (API_CONFIG.edition === Edition.HOSTED || API_CONFIG.edition === Edition.LFX) {
       if (user.email !== 'help@crowd.dev') {
         analytics.identify({
           userId: user.id,

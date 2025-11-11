@@ -25,7 +25,7 @@ export async function fetchFromEagleEye(user: UserTenant): Promise<EagleEyeRawPo
   const config = {
     method: 'get',
     maxBodyLength: Infinity,
-    url: process.env['CROWD_EAGLE_EYE_URL'],
+    url: process.env['EAGLE_EYE_URL'],
     params: {
       platforms: feedSettings.platforms.join(','),
       keywords: keywords,
@@ -34,7 +34,7 @@ export async function fetchFromEagleEye(user: UserTenant): Promise<EagleEyeRawPo
       after_date: afterDate,
     },
     headers: {
-      Authorization: `Bearer ${process.env['CROWD_EAGLE_EYE_API_KEY']}`,
+      Authorization: `Bearer ${process.env['EAGLE_EYE_API_KEY']}`,
     },
   }
 

@@ -4,7 +4,7 @@ const community: MenuLink = {
   id: 'community',
   label: 'Community',
   icon: 'ri-discord-fill',
-  href: 'https://crowd.dev/discord',
+  href: 'https://discord.gg/xXvYkK3yEp',
   display: () => true,
   disable: () => false,
 };

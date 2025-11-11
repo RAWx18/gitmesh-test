@@ -16,16 +16,16 @@ function create_nango_integration() {
     exportEnv "$KEY"
 
     # We need the client ID, secret and scopes to be set to create the integration
-    clientId=$(env | grep -i CROWD_${KEY}_CLIENT_ID | awk -F '=' '{print $2}')
-    clientSecret=$(env | grep -i CROWD_${KEY}_CLIENT_SECRET | awk -F '=' '{print $2}')
-    scopes=$(env | grep -i CROWD_${KEY}_SCOPES | awk -F '=' '{print $2}')
+    clientId=$(env | grep -i ${KEY}_CLIENT_ID | awk -F '=' '{print $2}')
+    clientSecret=$(env | grep -i ${KEY}_CLIENT_SECRET | awk -F '=' '{print $2}')
+    scopes=$(env | grep -i ${KEY}_SCOPES | awk -F '=' '{print $2}')
     if [[ -z $clientId || -z $clientSecret || -z $scopes ]]; then
         printf "\nNot all $1 variables are set. Skipping Nango integration creation.\n"
-        printf "The variables needed are: \n- CROWD_${KEY}_CLIENT_ID \n- CROWD_${KEY}_CLIENT_SECRET \n- CROWD_${KEY}_SCOPES"
+        printf "The variables needed are: \n- ${KEY}_CLIENT_ID \n- ${KEY}_CLIENT_SECRET \n- ${KEY}_SCOPES"
         return
     else
         printf "\nCreating $1 Integration with client ID: $clientId\n"
-        curl    -u "$CROWD_NANGO_SECRET_KEY:" \
+        curl    -u "$NANGO_SECRET_KEY:" \
                 --location 'http://localhost:3003/config' \
                 --header 'Content-Type: application/json' \
                 --data "{\"provider_config_key\": \"$1\",\"provider\": \"$1\",\"oauth_client_id\": \"$clientId\",\"oauth_client_secret\": \"$clientSecret\",\"oauth_scopes\": \"$scopes\"}"
@@ -35,7 +35,7 @@ function create_nango_integration() {
 
 function create_nango_integrations() {
     exportEnv "NANGO" "dist"
-    integrations=$CROWD_NANGO_INTEGRATIONS
+    integrations=$NANGO_INTEGRATIONS
     IFS=',' read -ra INTEGRATIONS <<< "$integrations"
 
     for i in "${INTEGRATIONS[@]}"; do

@@ -8,7 +8,7 @@ import { Body } from './types/payload'
 import { fromJSON, toJSON } from './utils/payload'
 
 const config: Config = {
-  envvars: ['CROWD_TEMPORAL_ENCRYPTION_KEY_ID', 'CROWD_TEMPORAL_ENCRYPTION_KEY'],
+  envvars: ['TEMPORAL_ENCRYPTION_KEY_ID', 'TEMPORAL_ENCRYPTION_KEY'],
   producer: {
     enabled: false,
   },
@@ -25,7 +25,7 @@ export const svc = new Service(config)
 setImmediate(async () => {
   await svc.init()
 
-  const codec = await EncryptionCodec.create(process.env['CROWD_TEMPORAL_ENCRYPTION_KEY_ID'])
+  const codec = await EncryptionCodec.create(process.env['TEMPORAL_ENCRYPTION_KEY_ID'])
 
   const app = express()
   app.use(cors({ allowedHeaders: ['x-namespace', 'content-type'] }))

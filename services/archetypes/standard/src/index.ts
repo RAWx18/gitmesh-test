@@ -14,9 +14,9 @@ const logger = getServiceLogger()
 // List all required environment variables, grouped per "component".
 const envvars = {
   base: ['SERVICE'],
-  producer: ['CROWD_KAFKA_BROKERS'],
-  temporal: ['CROWD_TEMPORAL_SERVER_URL', 'CROWD_TEMPORAL_NAMESPACE'],
-  redis: ['CROWD_REDIS_HOST', 'CROWD_REDIS_PORT', 'CROWD_REDIS_USERNAME', 'CROWD_REDIS_PASSWORD'],
+  producer: ['KAFKA_BROKERS'],
+  temporal: ['TEMPORAL_SERVER_URL', 'TEMPORAL_NAMESPACE'],
+  redis: ['REDIS_HOST', 'REDIS_PORT', 'REDIS_USERNAME', 'REDIS_PASSWORD'],
 }
 
 /*
@@ -73,8 +73,8 @@ export class Service {
     this.integrations = INTEGRATION_SERVICES
 
     // TODO: Handle SSL and SASL configuration.
-    if (config.producer.enabled && process.env['CROWD_KAFKA_BROKERS']) {
-      const brokers = process.env['CROWD_KAFKA_BROKERS']
+    if (config.producer.enabled && process.env['KAFKA_BROKERS']) {
+      const brokers = process.env['KAFKA_BROKERS']
       this._kafka = new Kafka({
         clientId: this.name,
         brokers: brokers.split(','),
@@ -200,14 +200,14 @@ export class Service {
     })
 
     if (
-      process.env['CROWD_EDITION'] === 'crowd-hosted' &&
-      process.env['CROWD_UNLEASH_URL'] &&
-      process.env['CROWD_UNLEASH_BACKEND_API_KEY']
+      process.env['EDITION'] === 'crowd-hosted' &&
+      process.env['UNLEASH_URL'] &&
+      process.env['UNLEASH_BACKEND_API_KEY']
     ) {
       this._unleash = await getUnleashClient({
-        url: process.env['CROWD_UNLEASH_URL'],
+        url: process.env['UNLEASH_URL'],
         appName: this.name,
-        apiKey: process.env['CROWD_UNLEASH_BACKEND_API_KEY'],
+        apiKey: process.env['UNLEASH_BACKEND_API_KEY'],
       })
     }
 
@@ -222,11 +222,11 @@ export class Service {
     if (this.config.temporal.enabled) {
       try {
         this._temporal = await getTemporalClient({
-          serverUrl: process.env['CROWD_TEMPORAL_SERVER_URL'],
-          namespace: process.env['CROWD_TEMPORAL_NAMESPACE'],
+          serverUrl: process.env['TEMPORAL_SERVER_URL'],
+          namespace: process.env['TEMPORAL_NAMESPACE'],
           identity: this.name,
-          certificate: process.env['CROWD_TEMPORAL_CERTIFICATE'],
-          privateKey: process.env['CROWD_TEMPORAL_PRIVATE_KEY'],
+          certificate: process.env['TEMPORAL_CERTIFICATE'],
+          privateKey: process.env['TEMPORAL_PRIVATE_KEY'],
         })
       } catch (err) {
         throw new Error(err)
@@ -236,10 +236,10 @@ export class Service {
     if (this.config.redis.enabled) {
       try {
         this._redisClient = await getRedisClient({
-          host: process.env['CROWD_REDIS_HOST'],
-          port: process.env['CROWD_REDIS_PORT'],
-          username: process.env['CROWD_REDIS_USERNAME'],
-          password: process.env['CROWD_REDIS_PASSWORD'],
+          host: process.env['REDIS_HOST'],
+          port: process.env['REDIS_PORT'],
+          username: process.env['REDIS_USERNAME'],
+          password: process.env['REDIS_PASSWORD'],
         })
       } catch (err) {
         throw new Error(err)

@@ -24,7 +24,7 @@
           >
             <i class="ri-question-line text-lg mr-3" />
             <span v-if="!props.collapsed" class="text-sm !text-gray-900">
-              Resources & support
+              GitMesh Support
             </span>
           </div>
         </el-tooltip>
@@ -34,7 +34,7 @@
     <div class="-mb-">
       <div class="pt-1 pb-3 px-4">
         <p class="uppercase text-2xs font-semibold tracking-1 text-gray-400 leading-6 text-center">
-          Resources & Support
+          GitMesh Support
         </p>
       </div>
       <div class="px-3 -mx-1 border-b border-gray-100 pb-4 mb-2">

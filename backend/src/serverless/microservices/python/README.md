@@ -15,13 +15,13 @@ In order to start developing, the environment needs to be prepared and some hook
 
 ### Requirements
 
-- Python 3.8
+- Python 3.8+
 
 ### Steps
 
 - Clone this repo and `cd` into it
-- Create a virtual environment with `python -m venv venv-crowd`
-- Activate it on unix/Windows with Git Bash `source venv-crowd/bin/activate` or on Windows `venv-crowd\Scripts\activate.bat`
+- Create a virtual environment with `python -m venv venv-gitmesh`
+- Activate it on unix/Windows with Git Bash `source venv-gitmesh/bin/activate` or on Windows `venv-gitmesh\Scripts\activate.bat`
 - Install all crowd modules in editable mode: `pip install -r requirements.internal.txt`
 - Install the dev modules `pip install -r requirements.txt`
 - Setup the pre-commit hook for formatting and linting `pre-commit install`

@@ -27,7 +27,7 @@ interface ActivityType {
 }
 
 const s3Url = `https://${
-  process.env['CROWD_S3_MICROSERVICES_ASSETS_BUCKET']
+  process.env['S3_MICROSERVICES_ASSETS_BUCKET']
 }-${getEnv()}.s3.eu-central-1.amazonaws.com`
 
 /*

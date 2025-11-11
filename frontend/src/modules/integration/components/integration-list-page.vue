@@ -7,9 +7,9 @@
         your community
       </div>
       <div class="text-xs text-gray-900">
-        <span class="text-base">🧐</span> Missing something?
+        <span class="text-base">🪄</span> Missing something?
         <a
-          href="https://github.com/CrowdDotDev/crowd.dev/issues?q=is%3Aopen+is%3Aissue+label%3A%22Integration+%F0%9F%94%8C%22+"
+          href="https://github.com/LF-Decentralized-Trust-labs/gitmesh/issues"
         >Open an issue</a>
       </div>
     </div>
@@ -61,7 +61,7 @@
             >email</a>
             or engage within our
             <a
-              href="https://crowd.dev/discord"
+              href="https://discord.gg/xXvYkK3yEp"
               class="font-semibold"
             >
               Discord community</a>.
@@ -80,12 +80,12 @@
             they are set up correctly. If the setup is
             correct, contact us via
             <a
-              href="mailto:help@crowd.dev"
+              href="mailto:support@gitmesh.dev"
               class="font-semibold"
             >email</a>
             or engage within our
             <a
-              href="https://crowd.dev/discord"
+              href="https://discord.gg/xXvYkK3yEp"
               class="font-semibold"
             >
               Discord community</a>.

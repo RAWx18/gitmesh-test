@@ -1,16 +1,16 @@
 import axios from 'axios'
 import { getServiceChildLogger } from '@crowd/logging'
-import { CROWD_ANALYTICS_CONFIG } from '../conf'
+import { ANALYTICS_CONFIG } from '../conf'
 import UserRepository from '../database/repositories/userRepository'
 import TenantRepository from '../database/repositories/tenantRepository'
 import SequelizeRepository from '../database/repositories/sequelizeRepository'
 
-const IS_CROWD_ANALYTICS_ENABLED = CROWD_ANALYTICS_CONFIG.isEnabled === 'true'
-const CROWD_ANALYTICS_TENANT_ID = CROWD_ANALYTICS_CONFIG.tenantId
-const CROWD_ANALYTICS_BASE_URL = CROWD_ANALYTICS_CONFIG.baseUrl
-const CROWD_ANALYTICS_TOKEN = CROWD_ANALYTICS_CONFIG.apiToken
+const IS_ANALYTICS_ENABLED = ANALYTICS_CONFIG.isEnabled === 'true'
+const ANALYTICS_TENANT_ID = ANALYTICS_CONFIG.tenantId
+const ANALYTICS_BASE_URL = ANALYTICS_CONFIG.baseUrl
+const ANALYTICS_TOKEN = ANALYTICS_CONFIG.apiToken
 
-export const CROWD_ANALYTICS_PLATORM_NAME = 'crowd.dev-analytics'
+export const ANALYTICS_PLATORM_NAME = 'crowd.dev-analytics'
 
 const log = getServiceChildLogger('segment')
 
@@ -26,26 +26,26 @@ const expandAttributes = (attributes: Object) => {
   const obj = {}
   Object.keys(attributes).forEach((key) => {
     obj[key.toLowerCase()] = {
-      [CROWD_ANALYTICS_PLATORM_NAME]: attributes[key],
+      [ANALYTICS_PLATORM_NAME]: attributes[key],
     }
   })
   return obj
 }
 
 export default async function addProductData(data: CrowdAnalyticsData) {
-  if (!IS_CROWD_ANALYTICS_ENABLED) {
+  if (!IS_ANALYTICS_ENABLED) {
     return
   }
 
-  if (!CROWD_ANALYTICS_TENANT_ID) {
+  if (!ANALYTICS_TENANT_ID) {
     return
   }
 
-  if (!CROWD_ANALYTICS_BASE_URL) {
+  if (!ANALYTICS_BASE_URL) {
     return
   }
 
-  if (!CROWD_ANALYTICS_TOKEN) {
+  if (!ANALYTICS_TOKEN) {
     return
   }
 
@@ -72,7 +72,7 @@ export default async function addProductData(data: CrowdAnalyticsData) {
     const obj = {
       member: {
         username: {
-          [CROWD_ANALYTICS_PLATORM_NAME]: user.email,
+          [ANALYTICS_PLATORM_NAME]: user.email,
         },
         emails: [user.email],
         displayName: user.fullName,
@@ -95,13 +95,13 @@ export default async function addProductData(data: CrowdAnalyticsData) {
       },
       type: data.event,
       timestamp,
-      platform: CROWD_ANALYTICS_PLATORM_NAME,
+      platform: ANALYTICS_PLATORM_NAME,
       sourceId: `${data.userId}-${timestamp}-${data.event}`,
     }
-    const endpoint = `${CROWD_ANALYTICS_BASE_URL}/tenant/${CROWD_ANALYTICS_TENANT_ID}/activity/with-member`
+    const endpoint = `${ANALYTICS_BASE_URL}/tenant/${ANALYTICS_TENANT_ID}/activity/with-member`
     await axios.post(endpoint, obj, {
       headers: {
-        Authorization: `Bearer ${CROWD_ANALYTICS_TOKEN}`,
+        Authorization: `Bearer ${ANALYTICS_TOKEN}`,
       },
     })
   } catch (error) {

@@ -1,6 +1,6 @@
 class DBKeys:
     INFO = "info"
-    CROWD_INFO = "crowdInfo"
+    INFO = "crowdInfo"
     URL = "url"
     COMMITS = "commits"
     ISSUES = "issues"
@@ -29,7 +29,7 @@ class DBKeys:
     SCORE = "score"
     EMAILS = "emails"
     TO_MERGE = "membersToMerge"
-    CROWD_USERNAME = "crowdUsername"
+    USERNAME = "crowdUsername"
     NO_MERGE = "noMerge"
     TAGS = "tags"
     JOINED_AT = "joinedAt"

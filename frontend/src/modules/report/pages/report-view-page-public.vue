@@ -116,14 +116,14 @@
         >
           <div class="flex items-center">
             <a
-              href="https://www.crowd.dev/privacy-policy"
+              href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
               class="text-gray-400 hover:text-brand-500"
               target="_blank"
               rel="noopener noreferrer"
             >Privacy Policy</a>
             <span class="mx-1"> · </span>
             <a
-              href="https://www.crowd.dev/terms-of-use"
+              href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
               class="text-gray-400 hover:text-brand-500"
               target="_blank"
               rel="noopener noreferrer"

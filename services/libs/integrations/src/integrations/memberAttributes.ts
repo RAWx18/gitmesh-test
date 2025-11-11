@@ -5,7 +5,7 @@ import {
   MemberAttributes,
 } from '@crowd/types'
 
-export const CROWD_MEMBER_ATTRIBUTES: IMemberAttribute[] = [
+export const MEMBER_ATTRIBUTES: IMemberAttribute[] = [
   {
     name: MemberAttributes[MemberAttributeName.SAMPLE].name,
     label: MemberAttributes[MemberAttributeName.SAMPLE].label,

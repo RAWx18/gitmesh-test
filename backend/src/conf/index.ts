@@ -134,7 +134,7 @@ export const INTEGRATION_PROCESSING_CONFIG: IntegrationProcessingConfiguration =
 export const WEEKLY_EMAILS_CONFIG: WeeklyEmailsConfiguration =
   config.get<WeeklyEmailsConfiguration>('weeklyEmails')
 
-export const CROWD_ANALYTICS_CONFIG: CrowdAnalyticsConfiguration =
+export const ANALYTICS_CONFIG: CrowdAnalyticsConfiguration =
   config.get<CrowdAnalyticsConfiguration>('crowdAnalytics')
 
 export const TEMPORAL_CONFIG: IBackendTemporalConfig =

@@ -1,7 +1,7 @@
 import { QueryTypes } from 'sequelize'
 import { MemberAttributeName, PlatformType } from '@crowd/types'
 import {
-  CROWD_MEMBER_ATTRIBUTES,
+  MEMBER_ATTRIBUTES,
   DEFAULT_MEMBER_ATTRIBUTES,
   DEVTO_MEMBER_ATTRIBUTES,
   DISCORD_MEMBER_ATTRIBUTES,
@@ -35,7 +35,7 @@ export default async () => {
       await memberAttributesService.createPredefined(
         MemberAttributeSettingsService.pickAttributes(
           [MemberAttributeName.SAMPLE],
-          CROWD_MEMBER_ATTRIBUTES,
+          MEMBER_ATTRIBUTES,
         ),
       )
     }

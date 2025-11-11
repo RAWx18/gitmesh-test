@@ -11,7 +11,7 @@ export async function getDataConverter(): Promise<DataConverter> {
 }
 
 async function createDataConverter(): Promise<DataConverter> {
-  const keyId = process.env['CROWD_TEMPORAL_ENCRYPTION_KEY_ID']
+  const keyId = process.env['TEMPORAL_ENCRYPTION_KEY_ID']
   return {
     payloadCodecs: [await EncryptionCodec.create(keyId)],
   }

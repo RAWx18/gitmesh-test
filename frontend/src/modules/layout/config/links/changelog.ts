@@ -4,7 +4,7 @@ const changelog: MenuLink = {
   id: 'changelog',
   label: 'Changelog',
   icon: 'ri-megaphone-line',
-  href: 'https://changelog.crowd.dev',
+  href: 'https://github.com/LF-Decentralized-Trust-labs/gitmesh',
   display: () => true,
   disable: () => false,
 };

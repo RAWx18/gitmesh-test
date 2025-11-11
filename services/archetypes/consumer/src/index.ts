@@ -5,7 +5,7 @@ import { Config, Service } from '@crowd/archetype-standard'
 // List all required environment variables, grouped per "component".
 // They are in addition to the ones required by the "standard" archetype.
 const envvars = {
-  consumer: ['CROWD_KAFKA_TOPICS', 'CROWD_KAFKA_GROUP_ID'],
+  consumer: ['KAFKA_TOPICS', 'KAFKA_GROUP_ID'],
 }
 
 /*
@@ -65,7 +65,7 @@ export class ServiceConsumer extends Service {
 
     try {
       this._consumer = this._kafka.consumer({
-        groupId: process.env['CROWD_KAFKA_GROUP_ID'],
+        groupId: process.env['KAFKA_GROUP_ID'],
         maxWaitTimeInMs: this.options.maxWaitTimeInMs || 2000,
         retry: this.options.retryPolicy,
       })
@@ -78,7 +78,7 @@ export class ServiceConsumer extends Service {
 
   // Actually start the consumer's subscription.
   async start() {
-    const topics = process.env['CROWD_KAFKA_TOPICS']
+    const topics = process.env['KAFKA_TOPICS']
 
     try {
       await this._consumer.subscribe({

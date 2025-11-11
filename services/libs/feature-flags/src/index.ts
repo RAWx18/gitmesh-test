@@ -14,7 +14,7 @@ const log = getServiceChildLogger('feature-flags')
 
 let unleash: Unleash | undefined
 export const getUnleashClient = async (cfg: IUnleashConfig): Promise<Unleash | undefined> => {
-  if (EDITION !== Edition.CROWD_HOSTED) {
+  if (EDITION !== Edition.HOSTED) {
     return undefined
   }
 

@@ -9,7 +9,7 @@ export enum WebhookType {
   DISCORD = 'DISCORD',
   DISCOURSE = 'DISCOURSE',
   GROUPSIO = 'GROUPSIO',
-  CROWD_GENERATED = 'CROWD_GENERATED',
+  GENERATED = 'GENERATED',
 }
 
 export enum DiscordWebsocketEvent {

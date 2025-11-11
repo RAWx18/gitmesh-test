@@ -4,7 +4,7 @@
       <img
         class="h-20 w-auto"
         src="/images/logo/gitmesh.png"
-        alt="crowd.dev logo"
+        alt="gitmesh.dev logo"
       />
     </div>
     <aside class="auth-side rounded-lg flex flex-col">
@@ -32,7 +32,7 @@ export default {
   background: linear-gradient(
     154.2deg,
     #ffffff 0%,
-    #f8efed 57.5%
+    #edf0f8ff 57.5%
   );
   width: 28rem;
   position: fixed;

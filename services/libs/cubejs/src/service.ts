@@ -25,7 +25,7 @@ export class CubeJsService {
     this.tenantId = tenantId
     this.segments = segments
     this.token = await CubeJsService.generateJwtToken(this.tenantId, this.segments)
-    this.api = cubejs(this.token, { apiUrl: process.env['CROWD_CUBEJS_URL'] })
+    this.api = cubejs(this.token, { apiUrl: process.env['CUBEJS_URL'] })
   }
 
   /**
@@ -41,8 +41,8 @@ export class CubeJsService {
 
   static async generateJwtToken(tenantId: string, segments: string[]) {
     const context = { tenantId, segments }
-    const token = jwt.sign(context, process.env['CROWD_CUBEJS_JWT_SECRET'], {
-      expiresIn: process.env['CROWD_CUBEJS_JWT_EXPIRY'],
+    const token = jwt.sign(context, process.env['CUBEJS_JWT_SECRET'], {
+      expiresIn: process.env['CUBEJS_JWT_EXPIRY'],
     })
 
     return token
@@ -51,7 +51,7 @@ export class CubeJsService {
   static async verifyToken(language, token, tenantId) {
     try {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const decodedToken: any = jwt.verify(token, process.env['CROWD_CUBEJS_JWT_SECRET'])
+      const decodedToken: any = jwt.verify(token, process.env['CUBEJS_JWT_SECRET'])
 
       if (decodedToken.tenantId !== tenantId) {
         throw new Error400(language, 'cubejs.tenantIdNotMatching')

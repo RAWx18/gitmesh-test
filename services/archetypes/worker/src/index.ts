@@ -10,19 +10,19 @@ import { getDataConverter } from '@crowd/temporal'
 // They are in addition to the ones required by the "standard" archetype.
 const envvars = {
   worker: [
-    'CROWD_TEMPORAL_SERVER_URL',
-    'CROWD_TEMPORAL_NAMESPACE',
-    'CROWD_TEMPORAL_TASKQUEUE',
-    'CROWD_TEMPORAL_ENCRYPTION_KEY_ID',
-    'CROWD_TEMPORAL_ENCRYPTION_KEY',
+    'TEMPORAL_SERVER_URL',
+    'TEMPORAL_NAMESPACE',
+    'TEMPORAL_TASKQUEUE',
+    'TEMPORAL_ENCRYPTION_KEY_ID',
+    'TEMPORAL_ENCRYPTION_KEY',
   ],
   postgres: [
-    'CROWD_DB_READ_HOST',
-    'CROWD_DB_WRITE_HOST',
-    'CROWD_DB_PORT',
-    'CROWD_DB_USERNAME',
-    'CROWD_DB_PASSWORD',
-    'CROWD_DB_DATABASE',
+    'DB_READ_HOST',
+    'DB_WRITE_HOST',
+    'DB_PORT',
+    'DB_USERNAME',
+    'DB_PASSWORD',
+    'DB_DATABASE',
   ],
 }
 
@@ -96,12 +96,12 @@ export class ServiceWorker extends Service {
     }
 
     try {
-      const certificate = process.env['CROWD_TEMPORAL_CERTIFICATE']
-      const privateKey = process.env['CROWD_TEMPORAL_PRIVATE_KEY']
+      const certificate = process.env['TEMPORAL_CERTIFICATE']
+      const privateKey = process.env['TEMPORAL_PRIVATE_KEY']
 
       this.log.info(
         {
-          address: process.env['CROWD_TEMPORAL_SERVER_URL'],
+          address: process.env['TEMPORAL_SERVER_URL'],
           certificate: certificate ? 'yes' : 'no',
           privateKey: privateKey ? 'yes' : 'no',
         },
@@ -109,7 +109,7 @@ export class ServiceWorker extends Service {
       )
 
       const connection = await NativeConnection.connect({
-        address: process.env['CROWD_TEMPORAL_SERVER_URL'],
+        address: process.env['TEMPORAL_SERVER_URL'],
         tls:
           certificate && privateKey
             ? {
@@ -128,8 +128,8 @@ export class ServiceWorker extends Service {
       this._worker = await TemporalWorker.create({
         connection: connection,
         identity: this.name,
-        namespace: process.env['CROWD_TEMPORAL_NAMESPACE'],
-        taskQueue: process.env['CROWD_TEMPORAL_TASKQUEUE'],
+        namespace: process.env['TEMPORAL_NAMESPACE'],
+        taskQueue: process.env['TEMPORAL_TASKQUEUE'],
         enableSDKTracing: true,
         showStackTraceSources: true,
         workflowBundle: workflowBundle,
@@ -143,11 +143,11 @@ export class ServiceWorker extends Service {
     if (this.options.postgres.enabled) {
       try {
         const dbConnection = await getDbConnection({
-          host: process.env['CROWD_DB_READ_HOST'],
-          port: Number(process.env['CROWD_DB_PORT']),
-          user: process.env['CROWD_DB_USERNAME'],
-          password: process.env['CROWD_DB_PASSWORD'],
-          database: process.env['CROWD_DB_DATABASE'],
+          host: process.env['DB_READ_HOST'],
+          port: Number(process.env['DB_PORT']),
+          user: process.env['DB_USERNAME'],
+          password: process.env['DB_PASSWORD'],
+          database: process.env['DB_DATABASE'],
         })
 
         this._postgresReader = new DbStore(this.log, dbConnection)
@@ -157,11 +157,11 @@ export class ServiceWorker extends Service {
 
       try {
         const dbConnection = await getDbConnection({
-          host: process.env['CROWD_DB_WRITE_HOST'],
-          port: Number(process.env['CROWD_DB_PORT']),
-          user: process.env['CROWD_DB_USERNAME'],
-          password: process.env['CROWD_DB_PASSWORD'],
-          database: process.env['CROWD_DB_DATABASE'],
+          host: process.env['DB_WRITE_HOST'],
+          port: Number(process.env['DB_PORT']),
+          user: process.env['DB_USERNAME'],
+          password: process.env['DB_PASSWORD'],
+          database: process.env['DB_DATABASE'],
         })
 
         this._postgresWriter = new DbStore(this.log, dbConnection)

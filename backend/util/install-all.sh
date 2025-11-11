@@ -25,8 +25,8 @@ pushd $CLI_HOME/../../premium/conversations
 npm ci
 popd
 
-python3.8 -m venv venv-crowd
-source venv-crowd/bin/activate
+python3.8 -m venv venv-gitmesh
+source venv-gitmesh/bin/activate
 pip install --upgrade pip 
 
 pushd $CLI_HOME/../src/serverless/microservices/python

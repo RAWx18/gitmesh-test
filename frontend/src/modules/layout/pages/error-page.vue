@@ -36,7 +36,7 @@
       class="absolute right-0 bottom-0 mb-16 flex items-center"
     >
       <a
-        href="https://crowd.dev/discord"
+        href="https://discord.gg/xXvYkK3yEp"
         class="btn btn--transparent btn--md flex items-center mr-6"
         target="_blank"
         rel="noopener noreferrer"

@@ -22,10 +22,10 @@ const options: Options = {
 
 export const svc = new ServiceWorker(config, options)
 
-export const FRONTEND_URL = process.env.CROWD_API_FRONTEND_URL
+export const FRONTEND_URL = process.env.API_FRONTEND_URL
 
 if (!FRONTEND_URL) {
-  throw new Error('CROWD_API_FRONTEND_URL is not set')
+  throw new Error('API_FRONTEND_URL is not set')
 }
 
 setImmediate(async () => {

@@ -97,7 +97,7 @@ setImmediate(async () => {
   app.use(opensearchMiddleware(opensearch))
 
   // Bind unleash to request
-  if (UNLEASH_CONFIG.url && API_CONFIG.edition === Edition.CROWD_HOSTED) {
+  if (UNLEASH_CONFIG.url && API_CONFIG.edition === Edition.HOSTED) {
     const unleash = await getUnleashClient({
       url: UNLEASH_CONFIG.url,
       apiKey: UNLEASH_CONFIG.backendApiKey,

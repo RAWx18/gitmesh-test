@@ -2,7 +2,7 @@
   <div class="overflow-auto mb-20">
     <div class="flex justify-center py-16">
       <div class="flex gap-6 items-center">
-        <span class="text-5xl"> 🙌 </span>
+        <span class="text-5xl"> 🐙 </span>
         <div class="flex flex-col gap-1">
           <h4 class="text-xl font-semibold leading-8">
             Get personalised onboarding
@@ -38,7 +38,7 @@ const router = useRouter();
 
 onMounted(() => {
   renderCal({
-    calLink: 'team/crowddotdev/get-personalised-onboarding',
+    calLink: 'gitmesh/sales',
   });
 });
 

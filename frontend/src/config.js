@@ -63,53 +63,53 @@ const defaultConfig = {
 
 const composedConfig = {
   frontendUrl: {
-    host: 'CROWD_VUE_APP_FRONTEND_HOST',
-    protocol: 'CROWD_VUE_APP_FRONTEND_PROTOCOL',
+    host: 'VUE_APP_FRONTEND_HOST',
+    protocol: 'VUE_APP_FRONTEND_PROTOCOL',
   },
-  backendUrl: 'CROWD_VUE_APP_BACKEND_URL',
-  websocketsUrl: 'CROWD_VUE_APP_WEBSOCKETS_URL',
+  backendUrl: 'VUE_APP_BACKEND_URL',
+  websocketsUrl: 'VUE_APP_WEBSOCKETS_URL',
   tenantMode,
   isPlanEnabled,
   gitHubInstallationUrl:
-    'CROWD_VUE_APP_GITHUB_INSTALLATION_URL',
+    'VUE_APP_GITHUB_INSTALLATION_URL',
   discordInstallationUrl:
-    'CROWD_VUE_APP_DISCORD_INSTALLATION_URL',
-  cubejsUrl: 'CROWD_VUE_APP_CUBEJS_URL',
+    'VUE_APP_DISCORD_INSTALLATION_URL',
+  cubejsUrl: 'VUE_APP_CUBEJS_URL',
   conversationPublicUrl:
-    'CROWD_VUE_APP_CONVERSATIONS_PUBLIC_URL',
-  edition: 'CROWD_VUE_APP_EDITION',
-  communityPremium: 'CROWD_VUE_APP_COMMUNITY_PREMIUM',
-  env: 'CROWD_VUE_APP_ENV',
-  hotjarKey: 'CROWD_VUE_APP_HOTJAR_KEY',
-  nangoUrl: 'CROWD_VUE_APP_NANGO_URL',
-  typeformId: 'CROWD_VUE_APP_TYPEFORM_ID',
-  typeformTitle: 'CROWD_VUE_APP_TYPEFORM_TITLE',
+    'VUE_APP_CONVERSATIONS_PUBLIC_URL',
+  edition: 'VUE_APP_EDITION',
+  communityPremium: 'VUE_APP_COMMUNITY_PREMIUM',
+  env: 'VUE_APP_ENV',
+  hotjarKey: 'VUE_APP_HOTJAR_KEY',
+  nangoUrl: 'VUE_APP_NANGO_URL',
+  typeformId: 'VUE_APP_TYPEFORM_ID',
+  typeformTitle: 'VUE_APP_TYPEFORM_TITLE',
   unleash: {
-    apiKey: 'CROWD_VUE_APP_UNLEASH_API_KEY',
-    url: 'CROWD_VUE_APP_UNLEASH_URL',
+    apiKey: 'VUE_APP_UNLEASH_API_KEY',
+    url: 'VUE_APP_UNLEASH_URL',
   },
   formbricks: {
-    url: 'CROWD_VUE_APP_FORMBRICKS_URL',
-    environmentId: 'CROWD_VUE_APP_FORMBRICKS_ENVIRONMENT_ID',
+    url: 'VUE_APP_FORMBRICKS_URL',
+    environmentId: 'VUE_APP_FORMBRICKS_ENVIRONMENT_ID',
   },
   stripe: {
     publishableKey:
-      'CROWD_VUE_APP_STRIPE_PUBLISHABLE_KEY' || '',
+      'VUE_APP_STRIPE_PUBLISHABLE_KEY' || '',
     growthPlanPaymentLink:
-      'CROWD_VUE_APP_STRIPE_GROWTH_PLAN_PAYMENT_LINK' || '',
+      'VUE_APP_STRIPE_GROWTH_PLAN_PAYMENT_LINK' || '',
     eagleEyePlanPaymentLink:
-      'CROWD_VUE_APP_STRIPE_EAGLE_EYE_PLAN_PAYMENT_LINK'
+      'VUE_APP_STRIPE_EAGLE_EYE_PLAN_PAYMENT_LINK'
       || '',
     customerPortalLink:
-      'CROWD_VUE_APP_STRIPE_CUSTOMER_PORTAL_LINK' || '',
+      'VUE_APP_STRIPE_CUSTOMER_PORTAL_LINK' || '',
   },
   sampleTenant: {
-    id: 'CROWD_VUE_APP_SAMPLE_TENANT_ID',
-    token: 'CROWD_VUE_APP_SAMPLE_TENANT_TOKEN',
+    id: 'VUE_APP_SAMPLE_TENANT_ID',
+    token: 'VUE_APP_SAMPLE_TENANT_TOKEN',
   },
-  isGitEnabled: 'CROWD_VUE_APP_IS_GIT_ENABLED',
-  isGroupsioEnabled: 'CROWD_VUE_APP_IS_GROUPSIO_ENABLED',
-  isTwitterEnabled: 'CROWD_VUE_APP_IS_TWITTER_ENABLED',
+  isGitEnabled: 'VUE_APP_IS_GIT_ENABLED',
+  isGroupsioEnabled: 'VUE_APP_IS_GROUPSIO_ENABLED',
+  isTwitterEnabled: 'VUE_APP_IS_TWITTER_ENABLED',
 };
 
 const config = defaultConfig.backendUrl

@@ -4,7 +4,7 @@ x-env-args: &env-args
   DOCKER_BUILDKIT: 1
   NODE_ENV: docker
   SERVICE: emails-worker
-  CROWD_TEMPORAL_TASKQUEUE: emails
+  TEMPORAL_TASKQUEUE: emails
   SHELL: /bin/sh
 
 services:

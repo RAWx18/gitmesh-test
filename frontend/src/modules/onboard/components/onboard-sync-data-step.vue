@@ -5,7 +5,7 @@
         <i class="ri-information-line text-gray-600 text-base" />
       </div>
       <div class="text-gray-600 text-xs">
-        Sync your community data to get the most out of crowd.dev. Connect at least 1 integration in order to create your workspace.
+        Connect at least one integration to unlock your workspace and start getting insights.
       </div>
     </div>
     <div

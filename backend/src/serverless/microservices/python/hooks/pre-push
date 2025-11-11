@@ -13,13 +13,13 @@ esac
 
 case "$machine" in
     Windows)
-      source venv-crowd/Scripts/activate
+      source venv-gitmesh/Scripts/activate
       ;;
     MinGw)
-      source venv-crowd/Scripts/activate
+      source venv-gitmesh/Scripts/activate
       ;;
     *)
-      source venv-crowd/bin/activate
+      source venv-gitmesh/bin/activate
       ;;
 esac
 

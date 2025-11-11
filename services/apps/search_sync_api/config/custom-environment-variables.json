@@ -1,31 +1,31 @@
 {
   "service": {
-    "edition": "CROWD_EDITION"
+    "edition": "EDITION"
   },
   "db": {
-    "host": "CROWD_DB_WRITE_HOST",
-    "port": "CROWD_DB_PORT",
-    "database": "CROWD_DB_DATABASE",
-    "user": "CROWD_DB_USERNAME",
-    "password": "CROWD_DB_PASSWORD"
+    "host": "DB_WRITE_HOST",
+    "port": "DB_PORT",
+    "database": "DB_DATABASE",
+    "user": "DB_USERNAME",
+    "password": "DB_PASSWORD"
   },
   "sqs": {
-    "region": "CROWD_SQS_AWS_REGION",
-    "host": "CROWD_SQS_HOST",
-    "port": "CROWD_SQS_PORT",
-    "accessKeyId": "CROWD_SQS_AWS_ACCESS_KEY_ID",
-    "secretAccessKey": "CROWD_SQS_AWS_SECRET_ACCESS_KEY"
+    "region": "SQS_AWS_REGION",
+    "host": "SQS_HOST",
+    "port": "SQS_PORT",
+    "accessKeyId": "SQS_AWS_ACCESS_KEY_ID",
+    "secretAccessKey": "SQS_AWS_SECRET_ACCESS_KEY"
   },
   "redis": {
-    "username": "CROWD_REDIS_USERNAME",
-    "password": "CROWD_REDIS_PASSWORD",
-    "host": "CROWD_REDIS_HOST",
-    "port": "CROWD_REDIS_PORT"
+    "username": "REDIS_USERNAME",
+    "password": "REDIS_PASSWORD",
+    "host": "REDIS_HOST",
+    "port": "REDIS_PORT"
   },
   "opensearch": {
-    "node": "CROWD_OPENSEARCH_NODE",
-    "region": "CROWD_OPENSEARCH_AWS_REGION",
-    "accessKeyId": "CROWD_OPENSEARCH_AWS_ACCESS_KEY_ID",
-    "secretAccessKey": "CROWD_OPENSEARCH_AWS_SECRET_ACCESS_KEY"
+    "node": "OPENSEARCH_NODE",
+    "region": "OPENSEARCH_AWS_REGION",
+    "accessKeyId": "OPENSEARCH_AWS_ACCESS_KEY_ID",
+    "secretAccessKey": "OPENSEARCH_AWS_SECRET_ACCESS_KEY"
   }
 }

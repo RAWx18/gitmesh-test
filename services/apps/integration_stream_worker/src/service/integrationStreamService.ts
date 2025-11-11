@@ -325,7 +325,7 @@ export default class IntegrationStreamService extends LoggerBase {
           streamInfo.tenantId,
           streamInfo.integrationId,
           // not a real webhok, just for compatibility
-          WebhookType.CROWD_GENERATED,
+          WebhookType.GENERATED,
           data,
         )
         await this.publishStream(

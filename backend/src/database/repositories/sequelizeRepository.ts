@@ -34,7 +34,7 @@ export default class SequelizeRepository {
   ): Promise<IRepositoryOptions> {
     let unleash: Unleash | undefined
 
-    if (UNLEASH_CONFIG.url && API_CONFIG.edition === Edition.CROWD_HOSTED) {
+    if (UNLEASH_CONFIG.url && API_CONFIG.edition === Edition.HOSTED) {
       unleash = await getUnleashClient({
         url: UNLEASH_CONFIG.url,
         apiKey: UNLEASH_CONFIG.backendApiKey,

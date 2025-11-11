@@ -20,39 +20,39 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_DB_WRITE_HOST
+                  key: DB_WRITE_HOST
             - name: NANGO_DB_PORT
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_DB_PORT
+                  key: DB_PORT
             - name: NANGO_DB_NAME
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_DB_DATABASE
+                  key: DB_DATABASE
             - name: NANGO_DB_USER
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_DB_USERNAME
+                  key: DB_USERNAME
             - name: NANGO_DB_PASSWORD
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_DB_PASSWORD
+                  key: DB_PASSWORD
             - name: NANGO_SECRET_KEY
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_NANGO_SECRET_KEY
+                  key: NANGO_SECRET_KEY
             - name: SERVER_PORT
               value: '3003'
             - name: NANGO_CALLBACK_URL
               valueFrom:
                 configMapKeyRef:
                   name: backend-config
-                  key: CROWD_NANGO_URL_CALLBACK
+                  key: NANGO_URL_CALLBACK
             - name: NANGO_SERVER_URL
               valueFrom:
                 configMapKeyRef:

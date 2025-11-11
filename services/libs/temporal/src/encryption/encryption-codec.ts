@@ -65,7 +65,7 @@ export class EncryptionCodec implements PayloadCodec {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function fetchKey(_keyId: string): Promise<crypto.CryptoKey> {
-  const key = Buffer.from(process.env['CROWD_TEMPORAL_ENCRYPTION_KEY'])
+  const key = Buffer.from(process.env['TEMPORAL_ENCRYPTION_KEY'])
   const cryptoKey = await crypto.subtle.importKey(
     'raw',
     key,

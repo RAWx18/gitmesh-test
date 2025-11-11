@@ -2,7 +2,7 @@ import { getServiceChildLogger } from '@crowd/logging'
 import { Edition } from '@crowd/types'
 import { API_CONFIG, IS_TEST_ENV, SEGMENT_CONFIG } from '../conf'
 import SequelizeRepository from '../database/repositories/sequelizeRepository'
-import { CROWD_ANALYTICS_PLATORM_NAME } from './addProductDataToCrowdTenant'
+import { ANALYTICS_PLATORM_NAME } from './addProductDataToCrowdTenant'
 import getTenatUser from './trackHelper'
 
 const log = getServiceChildLogger('segment')
@@ -21,13 +21,13 @@ export default async function identify(
     !IS_TEST_ENV &&
     SEGMENT_CONFIG.writeKey &&
     // This is only for events in the hosted version. Self-hosted has less telemetry.
-    (API_CONFIG.edition === Edition.CROWD_HOSTED || API_CONFIG.edition === Edition.LFX) &&
+    (API_CONFIG.edition === Edition.HOSTED || API_CONFIG.edition === Edition.LFX) &&
     userEmail !== 'help@crowd.dev'
   ) {
     if (
       properties &&
       properties?.platform &&
-      properties?.platform === CROWD_ANALYTICS_PLATORM_NAME
+      properties?.platform === ANALYTICS_PLATORM_NAME
     ) {
       // no need to track crowd analytics events in segment
       // and this is also to ensure we don't get into an infinite loop

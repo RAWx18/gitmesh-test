@@ -4,7 +4,7 @@ x-env-args: &env-args
   DOCKER_BUILDKIT: 1
   NODE_ENV: docker
   SERVICE: automations-worker
-  CROWD_TEMPORAL_TASKQUEUE: automations
+  TEMPORAL_TASKQUEUE: automations
   SHELL: /bin/sh
 
 services:

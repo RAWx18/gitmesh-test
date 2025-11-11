@@ -3,10 +3,10 @@
 set -eo pipefail
 
 PROJECT_NAME="crowd"
-DOCKER_NETWORK_SUBNET="${CROWD_NETWORK_SUBNET:-10.90.0.0/24}"
-DOCKER_NETWORK_GATEWAY="${CROWD_NETWORK_GATEWAY:-10.90.0.1}"
-DOCKET_TEST_NETWORK_SUBNET="${CROWD_TEST_NETWORK_SUBNET:-10.91.0.0/24}"
-DOCKER_TEST_NETWORK_GATEWAY="${CROWD_TEST_NETWORK_GATEWAY:-10.91.0.1}"
+DOCKER_NETWORK_SUBNET="${NETWORK_SUBNET:-10.90.0.0/24}"
+DOCKER_NETWORK_GATEWAY="${NETWORK_GATEWAY:-10.90.0.1}"
+DOCKET_TEST_NETWORK_SUBNET="${TEST_NETWORK_SUBNET:-10.91.0.0/24}"
+DOCKER_TEST_NETWORK_GATEWAY="${TEST_NETWORK_GATEWAY:-10.91.0.1}"
 
 CLI_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 source $CLI_HOME/utils
@@ -342,14 +342,14 @@ function migrate_test() {
 }
 
 function source_edition() {
-    __CROWD_EDITION=$(source $CLI_HOME/../backend/.env.dist.local && source $CLI_HOME/../backend/.env.override.local && echo $CROWD_EDITION)
+    __EDITION=$(source $CLI_HOME/../backend/.env.dist.local && source $CLI_HOME/../backend/.env.override.local && echo $EDITION)
     nl
-    say "Crowd edition detected: $__CROWD_EDITION"
+    say "Crowd edition detected: $__EDITION"
 }
 
 function check_init_premium() {
     source_edition
-    if [ $__CROWD_EDITION == "crowd-hosted" ]; then
+    if [ $__EDITION == "crowd-hosted" ]; then
         $_DC --compatibility -p $PROJECT_NAME -f $CLI_HOME/premium-scaffold.yaml up -d --build
         init_unleash
     fi
