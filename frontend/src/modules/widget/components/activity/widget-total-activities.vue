@@ -107,7 +107,7 @@ const widgetChartOptions = chartOptions('area', {
 const datasets = computed(() => [
   {
     name: TOTAL_ACTIVITIES_WIDGET.name,
-    borderColor: '#E94F2E',
+    borderColor: '#1A59E8',
     measure: 'Activities.cumulativeCount',
     granularity: granularity.value,
   },

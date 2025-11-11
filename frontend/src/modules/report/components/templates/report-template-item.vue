@@ -10,7 +10,7 @@
         >
           <i
             class="text-white text-lg"
-            :class="template.icon"
+            :class="template.pngn"
           />
         </div>
 

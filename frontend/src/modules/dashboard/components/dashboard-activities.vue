@@ -118,7 +118,7 @@ export default {
       return [
         {
           name: 'new activities',
-          borderColor: '#E94F2E',
+          borderColor: '#1A59E8',
           measure: 'Activities.count',
           granularity: DAILY_GRANULARITY_FILTER.value,
         },

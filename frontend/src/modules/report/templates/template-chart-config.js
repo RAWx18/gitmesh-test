@@ -5,7 +5,7 @@ const defaultChartOptions = (config) => ({
   curve: true,
   points: true,
   title: undefined,
-  colors: ['#E94F2E'],
+  colors: ['#1A59E8'],
   loading: 'Loading...',
   empty: 'Loading...',
   library: {
@@ -120,7 +120,7 @@ export function chartOptions(type, config) {
         pointRadius: 5,
         pointBorderColor: 'transparent',
         pointBackgroundColor: 'transparent',
-        pointHoverBorderColor: '#E94F2E',
+        pointHoverBorderColor: '#1A59E8',
         pointHoverBackgroundColor: '#fff',
         pointHoverBorderWidth: '2',
         spanGaps: true,

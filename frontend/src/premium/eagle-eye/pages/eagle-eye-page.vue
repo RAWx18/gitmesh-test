@@ -23,7 +23,7 @@
         />
         <app-empty-state-cta
           v-else-if="showEmptyState"
-          :icon="emptyStateContent.icon"
+          :icon="emptyStateContent.pngn"
           :title="emptyStateContent.title"
           :description="emptyStateContent.description"
         />

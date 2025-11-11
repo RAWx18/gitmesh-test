@@ -89,7 +89,7 @@ const sorterOptions = computed(() => {
 .eagle-eye-view-btn {
   @apply flex items-center gap-2 px-3 rounded-lg h-8;
 
-  .icon {
+  .pngn {
     @apply text-gray-400 text-lg;
   }
 
@@ -100,7 +100,7 @@ const sorterOptions = computed(() => {
   &:hover {
     @apply bg-gray-200 cursor-pointer;
 
-    .icon,
+    .pngn,
     .text {
       @apply text-gray-900;
     }
@@ -109,7 +109,7 @@ const sorterOptions = computed(() => {
   &.selected {
     @apply bg-brand-50;
 
-    .icon {
+    .pngn {
       @apply text-brand-500;
     }
 

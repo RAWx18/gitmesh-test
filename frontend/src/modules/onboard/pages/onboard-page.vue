@@ -3,8 +3,8 @@
     <div class="flex gap-6 items-center limit-width">
       <img
         alt="Crowd logo mini"
-        src="/images/logo/crowd-mini.svg"
-        class="w-10"
+        src="/images/logo/gitmesh.png"
+        class="w-40"
       />
       <div>
         <h3

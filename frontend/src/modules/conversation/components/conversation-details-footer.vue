@@ -27,7 +27,7 @@
           class="flex items-center tag h-8 !rounded-md"
         >
           <i
-            :class="`${replyContent.icon} text-base mr-2 text-gray-400`"
+            :class="`${replyContent.pngn} text-base mr-2 text-gray-400`"
           />
           <p
             class="text-xs text-gray-900"

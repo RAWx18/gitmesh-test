@@ -2,8 +2,8 @@
   <div class="p-6 flex bg-white justify-center">
     <div class="logo absolute top-6 left-6">
       <img
-        class="h-6 w-auto"
-        src="/images/logo/crowd.svg"
+        class="h-20 w-auto"
+        src="/images/logo/gitmesh.png"
         alt="crowd.dev logo"
       />
     </div>

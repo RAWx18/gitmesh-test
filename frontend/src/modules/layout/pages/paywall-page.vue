@@ -10,7 +10,7 @@
           >
             <i
               class="text-white text-2xl"
-              :class="page.icon"
+              :class="page.pngn"
             />
           </div>
           <div class="flex flex-col">
@@ -79,7 +79,7 @@
           >
             <i
               class="text-brand-500 text-xl"
-              :class="feature.icon"
+              :class="feature.pngn"
             />
             <div class="ml-4 pt-1">
               <h6 class="mb-4">

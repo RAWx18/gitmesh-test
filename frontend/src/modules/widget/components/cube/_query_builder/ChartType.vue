@@ -14,7 +14,7 @@
         :label="item.value"
       >
         <div class="flex items-center text-sm">
-          <i class="mr-2" :class="item.icon" />{{ item.label }}
+          <i class="mr-2" :class="item.pngn" />{{ item.label }}
         </div>
       </el-radio-button>
     </el-radio-group>

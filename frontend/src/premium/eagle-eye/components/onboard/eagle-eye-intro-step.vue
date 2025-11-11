@@ -14,7 +14,7 @@
     >
       <i
         class="text-brand-500 text-lg"
-        :class="feature.icon"
+        :class="feature.pngn"
       />
       <div class="ml-4 text-xs">
         {{ feature.title }}

@@ -3,7 +3,7 @@
     <div :class="classes.content">
       <i
         class="ri-error-warning-line text-gray-200"
-        :class="classes.iconSize"
+        :class="classes.pngnSize"
       />
       <div>
         <div class="text-gray-600 text-sm font-semibold">

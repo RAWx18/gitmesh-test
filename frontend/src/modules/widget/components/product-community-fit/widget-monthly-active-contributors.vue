@@ -204,7 +204,7 @@ const { doExport } = mapActions('member');
 const datasets = computed(() => [
   {
     name: MONTHLY_ACTIVE_CONTRIBUTORS_WIDGET.name,
-    borderColor: '#E94F2E',
+    borderColor: '#1A59E8',
     backgroundColor: 'transparent',
     measure: 'Members.count',
     granularity: granularity.value.value,

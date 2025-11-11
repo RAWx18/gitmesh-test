@@ -63,7 +63,7 @@
         >
           <i
             class="ri-lg mr-1"
-            :class="markAsTeamMemberOptions.icon"
+            :class="markAsTeamMemberOptions.pngn"
           />
           {{ markAsTeamMemberOptions.copy }}
         </el-dropdown-item>

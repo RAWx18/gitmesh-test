@@ -2,12 +2,12 @@
   <div
     class="h-14 flex items-center transition group pl-4 pr-4"
   >
-    <router-link to="/" class="w-8 flex justify-center">
+    <router-link to="/" class="w-24 flex justify-center">
       <div>
         <img
           key="logo"
-          class="h-6 !opacity-100"
-          src="/images/logo/crowd-mini.svg"
+          class="w-40 !opacity-100"
+          src="/images/logo/gitmesh.png"
           alt="crowd.dev logo"
         />
       </div>

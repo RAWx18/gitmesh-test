@@ -50,7 +50,7 @@
         >
           <i
             class="ri-lg mr-1"
-            :class="markAsTeamOrganizationOptions.icon"
+            :class="markAsTeamOrganizationOptions.pngn"
           />
           {{ markAsTeamOrganizationOptions.copy }}
         </el-dropdown-item>

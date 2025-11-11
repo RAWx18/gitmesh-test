@@ -305,8 +305,8 @@ const datasets = computed(() => [
   {
     name: 'Average monthly contributors',
     borderColor: 'transparent',
-    backgroundColor: '#E94F2E',
-    hoverBackgroundColor: '#E94F2E',
+    backgroundColor: '#1A59E8',
+    hoverBackgroundColor: '#1A59E8',
     barThickness: 24,
     borderWidth: 0,
     measure: 'Members.count',

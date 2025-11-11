@@ -16,7 +16,7 @@
                 <img
                   v-if="automationTypes[scope.row.type]"
                   :alt="automationTypes[scope.row.type].name"
-                  :src="automationTypes[scope.row.type].icon"
+                  :src="automationTypes[scope.row.type].pngn"
                   class="w-6"
                 >
               </div>

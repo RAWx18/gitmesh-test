@@ -239,7 +239,7 @@ export default {
       return [
         {
           name,
-          borderColor: '#E94F2E',
+          borderColor: '#1A59E8',
           measure: 'Organizations.count',
           granularity: DAILY_GRANULARITY_FILTER.value,
         },

@@ -43,7 +43,7 @@ export const renderCal = ({
   });
 
   Cal('ui', {
-    styles: { branding: { brandColor: '#E94F2E' } },
+    styles: { branding: { brandColor: '#1A59E8' } },
     hideEventTypeDetails: false,
     layout: 'month_view',
   });

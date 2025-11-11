@@ -133,7 +133,7 @@ const widgetChartOptions = chartOptions('area', {
 const datasets = computed(() => [
   {
     name: 'Total members',
-    borderColor: '#E94F2E',
+    borderColor: '#1A59E8',
     measure: 'Members.cumulativeCount',
     granularity: granularity.value,
     ...(!props.isPublicView && {

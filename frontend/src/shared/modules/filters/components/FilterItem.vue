@@ -15,7 +15,7 @@
           :class="[{ '!bg-gray-100': isOpen }, props.chipClasses]"
           data-qa="filter-list-chip"
         >
-          <i class="text-base text-black mr-2" :class="config.iconClass" />
+          <i class="text-base text-black mr-2" :class="config.pngnClass" />
           <span
             class="text-xs text-gray-600 filter-item-text leading-6"
             v-html="$sanitize(

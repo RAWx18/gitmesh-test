@@ -142,7 +142,7 @@ const { cubejsApi } = mapGetters('widget');
 const datasets = computed(() => [
   {
     name: 'Total active contacts',
-    borderColor: '#E94F2E',
+    borderColor: '#1A59E8',
     measure: 'Members.count',
     granularity: granularity.value.value,
     ...(!props.isPublicView && {
@@ -152,7 +152,7 @@ const datasets = computed(() => [
   {
     name: 'Returning contacts',
     borderDash: [4, 4],
-    borderColor: '#E94F2E',
+    borderColor: '#1A59E8',
     measure: 'Members.count',
     granularity: granularity.value.value,
     ...(!props.isPublicView && {

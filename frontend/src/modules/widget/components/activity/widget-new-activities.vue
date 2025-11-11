@@ -106,7 +106,7 @@ const { cubejsApi } = mapGetters('widget');
 const datasets = computed(() => [
   {
     name: NEW_ACTIVITIES_WIDGET.name,
-    borderColor: '#E94F2E',
+    borderColor: '#1A59E8',
     measure: 'Activities.count',
     granularity: granularity.value.value,
     tooltipBtn: false,

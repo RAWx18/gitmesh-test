@@ -320,7 +320,7 @@ export async function getConversations(input: InputAnalyticsWithSegments): Promi
         if (conversationStarterActivity.platform === PlatformType.GITHUB) {
           const prettyChannelSplitted = prettyChannel.split('/')
           prettyChannel = prettyChannelSplitted[prettyChannelSplitted.length - 1]
-          prettyChannelHTML = `<span style='color:#e94f2e'><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#e94f2e;font-size:14px;line-height:14px" href="${conversationStarterActivity.channel}">${prettyChannel}</a></span>`
+          prettyChannelHTML = `<span style='color:#1A59E8'><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:none;color:#1A59E8;font-size:14px;line-height:14px" href="${conversationStarterActivity.channel}">${prettyChannel}</a></span>`
         }
 
         c.description = `${displayOptions.short} in ${prettyChannelHTML}`

@@ -7,7 +7,7 @@ const defaultChartOptions = {
   points: false,
   title: undefined,
   colors: [
-    '#E94F2E',
+    '#1A59E8',
     '#111827',
     '#3B82F6',
     '#10B981',
@@ -41,7 +41,7 @@ const formatTooltipOptions = {
 const platformColors = {
   github: '#111827',
   discord: '#8B5CF6',
-  slack: '#E94F2E',
+  slack: '#1A59E8',
   twitter: '#60A5FA',
   devto: '#5EEAD4',
 };

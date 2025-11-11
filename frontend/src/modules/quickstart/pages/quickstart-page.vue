@@ -2,10 +2,10 @@
   <app-page-wrapper>
     <div class="pb-6">
       <h4 class="mb-1">
-        👋 Welcome aboard
+        Welcome to GitMesh 🐾
       </h4>
       <p class="text-xs leading-5 text-gray-600">
-        Get to know crowd.dev and start centralizing your community, product, and customer data to provide insights to your go-to-market team.
+        The place where open-source teams coordinate, review, and ship together.
       </p>
     </div>
     <div class="flex -mx-2.5">
