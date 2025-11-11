@@ -5,7 +5,7 @@ class Plans {
     return {
       essential: 'Essential',
       growth: 'Growth',
-      eagleEye: 'Eagle Eye',
+      eagleEye: 'Hawk Eye',
       scale: 'Scale',
       enterprise: 'Enterprise',
     }

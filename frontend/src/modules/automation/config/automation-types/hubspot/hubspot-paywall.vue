@@ -14,7 +14,7 @@
       </p>
       <div class="flex justify-center pt-8">
         <a
-          href="https://cal.com/team/crowddotdev/sales"
+          href="https://cal.com/gitmesh/sales"
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn--md btn--bordered"

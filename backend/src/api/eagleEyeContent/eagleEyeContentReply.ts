@@ -9,7 +9,7 @@ export default async (req, res) => {
   const payload = await EagleEyeContentService.reply(req.query.title, req.query.description)
 
   track(
-    'Eagle Eye reply generated',
+    'Hawk Eye reply generated',
     {
       title: req.query.title,
       description: req.query.description,

@@ -16,7 +16,7 @@ export default async (req, res) => {
       break
     case 'generatedReply':
       track(
-        'Eagle Eye AI reply generated',
+        'Hawk Eye AI reply generated',
         {
           title: params.title,
           description: params.description,
@@ -29,7 +29,7 @@ export default async (req, res) => {
       break
     case 'generatedReplyFeedback':
       track(
-        'Eagle Eye AI reply feedback',
+        'Hawk Eye AI reply feedback',
         {
           type: params.type,
           title: params.title,
@@ -43,7 +43,7 @@ export default async (req, res) => {
       break
     case 'generatedReplyCopied':
       track(
-        'Eagle Eye AI reply copied',
+        'Hawk Eye AI reply copied',
         {
           title: params.title,
           description: params.description,

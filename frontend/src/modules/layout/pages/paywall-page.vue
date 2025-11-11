@@ -112,7 +112,7 @@ const section = computed(
 const page = computed(() => pageContent[section.value]);
 const computedFeaturePlan = computed(() => {
   if (config.isCommunityVersion) return 'Custom plan';
-  if (page.value.headerTitle === 'Eagle Eye') return 'Scale and Eagle Eye plans';
+  if (page.value.headerTitle === 'Hawk Eye') return 'Scale and Hawk Eye plans';
   return 'Scale plan';
 });
 </script>

@@ -20,11 +20,11 @@
         active-class="!bg-gray-100 font-medium !text-gray-900"
       >
         <div class="w-5 mr-3 block text-center">
-          👋
+          🍀
         </div>
         <div class="flex flex-grow justify-between">
           <span class="!text-gray-900">
-            Welcome aboard
+            Get Started
           </span>
           <div class="text-xs font-normal leading-6 px-1 rounded bg-gray-100 text-gray-400">
             {{ guides.length - notcompletedGuides.length }}/{{ guides.length }}

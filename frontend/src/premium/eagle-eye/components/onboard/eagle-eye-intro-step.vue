@@ -29,7 +29,7 @@
     Set up your feed
   </el-button>
   <a
-    href="https://docs.crowd.dev/docs/eagle-eye"
+    href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
     target="_blank"
     rel="noopener noreferrer"
     class="btn btn--secondary btn--full btn--md mt-5 hover:!text-gray-600"

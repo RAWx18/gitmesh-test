@@ -7,7 +7,7 @@ import { NodeWorkerMessageType } from '../../serverless/types/workerTypes'
 import { NodeWorkerMessageBase } from '../../types/mq/nodeWorkerMessageBase'
 
 const job: CrowdJob = {
-  name: 'Eagle Eye Email Digest Ticker',
+  name: 'Hawk Eye Email Digest Ticker',
   // every half hour
   cronTime: '*/30 * * * *',
   onTrigger: async () => {

@@ -3,7 +3,7 @@ import { EagleEyePermissions } from '@/premium/eagle-eye/eagle-eye-permissions';
 
 const eagleEye: MenuLink = {
   id: 'eagle-eye',
-  label: 'Eagle Eye',
+  label: 'Hawk Eye',
   icon: 'ri-search-eye-line',
   routeName: 'eagleEye',
   display: ({ user, tenant }) => {

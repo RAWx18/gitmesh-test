@@ -210,7 +210,7 @@ export default class EagleEyeSettingsService extends LoggerBase {
 
       if (data.emailDigestActive) {
         track(
-          'Eagle Eye email settings updated',
+          'Hawk Eye email settings updated',
           {
             email: settingsOut.emailDigest.email,
             frequency: settingsOut.emailDigest.frequency,
@@ -226,7 +226,7 @@ export default class EagleEyeSettingsService extends LoggerBase {
         )
       } else {
         track(
-          'Eagle Eye settings updated',
+          'Hawk Eye settings updated',
           {
             onboarded: settingsOut.onboarded,
             emailDigestActive: settingsOut.emailDigestActive,

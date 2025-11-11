@@ -131,7 +131,7 @@
               <a
                 aria-label="Question"
                 class="btn btn--transparent !h-8 !w-8 !text-gray-400 hover:!text-gray-600"
-                href="https://docs.crowd.dev/docs/eagle-eye#ai-replies"
+                href="https://github.com/LF-Decentralized-Trust-labs/gitmesh"
                 target="_blank"
                 rel="noopener noreferrer"
               >

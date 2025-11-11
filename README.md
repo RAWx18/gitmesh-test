@@ -39,7 +39,7 @@ crowd.dev is open-source, built with developers in mind, available for both host
 - **User enrichment** with 25+ attributes, including emails, social profiles, work experience, and technical skills. [cloud only]
 - **Organization enrichment** with 50+ attributes, including industry, headcount, and revenue. [cloud only]
 - **Sentiment analysis and conversation detection** to stay on top of what's going on in your open-source community. [cloud only]
-- **[Eagle Eye](https://www.crowd.dev/eagle-eye)**: Monitor dev-focused community platforms to find relevant content to engage with, helping you to gain developers’ mindshare and grow your community organically [cloud only]
+- **[Hawk Eye](https://www.crowd.dev/eagle-eye)**: Monitor dev-focused community platforms to find relevant content to engage with, helping you to gain developers’ mindshare and grow your community organically [cloud only]
 
 
 ## Getting started
@@ -124,9 +124,3 @@ Our self-hosted version can be run and deployed by default under the permissive 
 ## Security
 
 We take security very seriously. If you come across any security vulnerabilities, please disclose them by sending an email to security@crowd.dev. We appreciate your help in making our platform as secure as possible and are committed to working with you to resolve any issues quickly and efficiently.
-
-## Book a call
-
-Schedule a call with a crowd.dev team member to learn more about our product and ensure you get the most out of it.
-
-<a href="https://cal.com/team/CrowdDotDev/intro-to-crowd-dev/"><img alt="Book us with Cal.com" src="https://cal.com/book-with-cal-dark.svg" /></a>

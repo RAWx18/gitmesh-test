@@ -9,7 +9,7 @@ export default [
     component: Layout,
     meta: {
       auth: true,
-      title: 'Welcome aboard',
+      title: 'Onboarding',
     },
     children: [
       {

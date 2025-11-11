@@ -1,7 +1,7 @@
 export enum TenantPlans {
   Essential = 'Essential',
   Growth = 'Growth',
-  EagleEye = 'Eagle Eye',
+  EagleEye = 'Hawk Eye',
   Scale = 'Scale',
   Enterprise = 'enterprise',
 }

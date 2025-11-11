@@ -140,8 +140,3 @@ To ensure consistency throughout the source code, please keep these rules in min
 - In-code documentation is required for every function or class that is not self-evident.  
 - All new API endpoints that are relevant to the public API must have in-code documentation to generate OpenAPI specifications.  
 - The pipeline must pass.
-
-
-## Need help? 🛟
-
-If you need help with any sort of contribution, please feel free to reach out on [Discord](https://go.crowd.dev/discord) or book a [contributor onboarding call](https://cal.com/team/CrowdDotDev/contributor-onboarding?duration=15).

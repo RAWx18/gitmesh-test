@@ -3,10 +3,7 @@
     Choose keywords
   </h6>
   <div class="text-xs text-gray-500 mt-2">
-    Choose keywords that are relevant to the niche that you
-    want to grow in. For example, we at crowd.dev are
-    monitoring “community-led growth”, “community building”,
-    and “DevRel”.
+    Choose niche keywords. We track “community-led growth”, “community building”, and “DevRel”.
   </div>
 
   <div class="mt-8">

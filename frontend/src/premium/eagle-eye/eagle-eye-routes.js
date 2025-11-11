@@ -12,7 +12,7 @@ export default [
     component: Layout,
     meta: {
       auth: true,
-      title: 'Eagle Eye',
+      title: 'Hawk Eye',
     },
     children: [
       {

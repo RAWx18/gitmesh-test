@@ -357,9 +357,9 @@ const en = {
     },
 
     eagleEye: {
-      name: 'Eagle Eye',
-      label: 'Eagle Eye',
-      menu: 'Eagle Eye',
+      name: 'Hawk Eye',
+      label: 'Hawk Eye',
+      menu: 'Hawk Eye',
     },
 
     automation: {

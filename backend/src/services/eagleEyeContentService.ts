@@ -90,7 +90,7 @@ export default class EagleEyeContentService extends LoggerBase {
 
   static trackPostClicked(url: string, platform: string, req: any, source: string = 'app'): void {
     track(
-      'Eagle Eye post clicked',
+      'Hawk Eye post clicked',
       {
         url,
         platform,
@@ -101,7 +101,7 @@ export default class EagleEyeContentService extends LoggerBase {
   }
 
   static trackDigestEmailOpened(req: any): void {
-    track('Eagle Eye digest opened', {}, { ...req })
+    track('Hawk Eye digest opened', {}, { ...req })
   }
 
   /**

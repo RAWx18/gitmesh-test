@@ -76,7 +76,7 @@ export const hubspot: AutomationTypeConfig = {
     return {
       label: 'Upgrade plan',
       action: () => {
-        window.open('https://cal.com/team/crowddotdev/sales', '_blank');
+        window.open('https://cal.com/gitmesh/sales', '_blank');
       },
     };
   },

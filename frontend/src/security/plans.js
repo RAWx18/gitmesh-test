@@ -8,7 +8,7 @@ class Plans {
       growth: 'Growth',
       enterprise: 'Enterprise',
       scale: 'Scale',
-      eagleEye: 'Eagle Eye',
+      eagleEye: 'Hawk Eye',
     };
   }
 

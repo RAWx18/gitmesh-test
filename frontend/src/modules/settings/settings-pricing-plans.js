@@ -11,7 +11,7 @@ const intoToCrowdDevCal = ({
   displayCalDialog();
   setTimeout(() => {
     renderCal({
-      calLink: 'team/CrowdDotDev/sales',
+      calLink: 'gitmesh/sales',
     });
   }, 0);
 };
@@ -22,7 +22,7 @@ const customPlanCal = ({
   displayCalDialog();
   setTimeout(() => {
     renderCal({
-      calLink: 'team/CrowdDotDev/sales',
+      calLink: 'gitmesh/sales',
     });
   }, 0);
 };
@@ -132,7 +132,7 @@ export const plans = {
       key: communityPlans.community,
       title: 'Community',
       description:
-        "Keep ownership of your data and host crowd.dev's community version for free on your own premises",
+        "Keep ownership of your data and host gitmesh.dev's community version for free on your own premises",
       price: 'Free',
       features: [
         'Unlimited seats',
@@ -153,7 +153,7 @@ export const plans = {
       key: communityPlans.custom,
       title: 'Custom',
       description:
-        "Get access to crowd.dev's premium features and support, and host the platform on your own premises",
+        "Get access to gitmesh.dev's premium features and support, and host the platform on your own premises",
       price: 'On request',
       featuresNote: 'Everything in Community, plus:',
       features: [
