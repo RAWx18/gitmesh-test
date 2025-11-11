@@ -170,33 +170,53 @@ setImmediate(async () => {
   // Enable Passport for Social Sign-in
   authSocial(app, routes)
 
-  require('./auditLog').default(routes)
-  require('./auth').default(routes)
-  require('./plan').default(routes)
-  require('./tenant').default(routes)
-  require('./user').default(routes)
-  require('./settings').default(routes)
-  require('./member').default(routes)
-  require('./widget').default(routes)
-  require('./activity').default(routes)
-  require('./tag').default(routes)
-  require('./widget').default(routes)
-  require('./cubejs').default(routes)
-  require('./report').default(routes)
-  require('./integration').default(routes)
-  require('./microservice').default(routes)
-  require('./conversation').default(routes)
-  require('./eagleEyeContent').default(routes)
-  require('./automation').default(routes)
-  require('./task').default(routes)
-  require('./note').default(routes)
-  require('./organization').default(routes)
-  require('./quickstart-guide').default(routes)
-  require('./slack').default(routes)
-  require('./segment').default(routes)
-  require('./eventTracking').default(routes)
-  require('./customViews').default(routes)
-  require('./premium/enrichment').default(routes)
+  // Load API modules safely. Some optional modules (e.g. cubejs) may throw
+  // during require in dev when their dependencies or globals are not ready.
+  // We don't want one failing module to prevent the whole API from starting
+  // and mounting already-registered routes (for example social auth routes).
+  const apiModules = [
+    './auditLog',
+    './auth',
+    './plan',
+    './tenant',
+    './user',
+    './settings',
+    './member',
+    './widget',
+    './activity',
+    './tag',
+    './widget',
+    './cubejs',
+    './report',
+    './integration',
+    './microservice',
+    './conversation',
+    './eagleEyeContent',
+    './automation',
+    './task',
+    './note',
+    './organization',
+    './quickstart-guide',
+    './slack',
+    './segment',
+    './eventTracking',
+    './customViews',
+    './premium/enrichment',
+  ]
+
+  for (const mod of apiModules) {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-var-requires, global-require
+      const loader = require(mod)
+      if (loader && typeof loader.default === 'function') {
+        loader.default(routes)
+      } else if (typeof loader === 'function') {
+        loader(routes)
+      }
+    } catch (err) {
+      serviceLogger.error({ err, module: mod }, `Failed to load API module ${mod}. Continuing without it.`)
+    }
+  }
   // Loads the Tenant if the :tenantId param is passed
   routes.param('tenantId', tenantMiddleware)
   routes.param('tenantId', segmentMiddleware)
